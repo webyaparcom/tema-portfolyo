@@ -1,0 +1,39 @@
+{
+  "id": "cxg6hta67k",
+  "name": {
+    "tr": "Çekim rezervasyonu",
+    "en": "Book a shoot",
+    "ar": "حجز جلسة"
+  },
+  "description": {
+    "tr": "Çekim türü, fotoğrafçı, gün ve saat seçerek rezervasyon (demo).",
+    "en": "Book by choosing the type of shoot, photographer, day and time (demo).",
+    "ar": "احجز باختيار نوع الجلسة والمصوّر واليوم والوقت (تجريبي)."
+  },
+  "keyword": {
+    "tr": "çekim rezervasyonu, randevu",
+    "en": "shoot booking, appointment",
+    "ar": "حجز جلسة، موعد"
+  },
+  "path": "cekim-rezervasyon",
+  "icon": "event",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "rmvkxc"
+    ],
+    "footer": []
+  },
+  "index": 4,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Çekim rezervasyonu",
+    "en": "Book a shoot",
+    "ar": "حجز جلسة"
+  },
+  "date": "2026-10-30T18:50:50.971Z",
+  "update": "2026-10-30T18:58:31.893Z"
+}

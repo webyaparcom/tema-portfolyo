@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Projeler",
+    "en": "Projects",
+    "ar": "الأعمال"
+  },
+  "status": "play",
+  "category": "",
+  "id": "projeler",
+  "url": "",
+  "path": "projeler",
+  "index": 0,
+  "icon": "photo_library",
+  "desing": {
+    "header": [],
+    "body": [
+      "g3gm02",
+      "g3ca01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Manzara, portre, sokak ve mimari fotoğraflardan seçmeler; kategori süzgeci ve tam ekran görüntüleyici (kurgusal görseller).",
+    "en": "Selected landscape, portrait, street and architecture photographs with a category filter and full-screen viewer (fictional images).",
+    "ar": "مختارات من صور المناظر والبورتريه والشوارع والعمارة مع تصفية حسب الفئة وعارض بملء الشاشة (صور افتراضية)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Projeler",
+    "en": "Projects",
+    "ar": "الأعمال"
+  },
+  "keyword": {
+    "tr": "portfolyo, fotoğraf galerisi, projeler",
+    "en": "portfolio, photo gallery, projects",
+    "ar": "معرض أعمال، معرض صور، أعمال"
+  },
+  "text": {},
+  "update": "2026-10-30T18:58:31.876Z",
+  "date": "2026-10-30"
+}

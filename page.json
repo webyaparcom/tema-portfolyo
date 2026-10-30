@@ -1,0 +1,193 @@
+{
+  "data": [
+    {
+      "name": {
+        "tr": "Projeler",
+        "en": "Projects",
+        "ar": "الأعمال"
+      },
+      "status": "play",
+      "id": "projeler",
+      "path": "projeler",
+      "category": "",
+      "url": "",
+      "index": 0,
+      "icon": "photo_library",
+      "desing": {
+        "header": [],
+        "body": [
+          "g3gm02",
+          "g3ca01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Manzara, portre, sokak ve mimari fotoğraflardan seçmeler; kategori süzgeci ve tam ekran görüntüleyici (kurgusal görseller).",
+        "en": "Selected landscape, portrait, street and architecture photographs with a category filter and full-screen viewer (fictional images).",
+        "ar": "مختارات من صور المناظر والبورتريه والشوارع والعمارة مع تصفية حسب الفئة وعارض بملء الشاشة (صور افتراضية)."
+      }
+    },
+    {
+      "id": "2rd2yw2mco",
+      "name": {
+        "tr": "Hizmetler",
+        "en": "Services",
+        "ar": "الخدمات"
+      },
+      "description": {
+        "tr": "Portre, aile, ürün, mimari ve etkinlik fotoğrafçılığı.",
+        "en": "Portrait, family, product, architecture and event photography.",
+        "ar": "تصوير البورتريه والعائلة والمنتجات والعمارة والفعاليات."
+      },
+      "path": "hizmetler",
+      "icon": "camera_alt",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "oj3sql",
+          "dr9dme",
+          "g3ca01"
+        ],
+        "footer": []
+      },
+      "index": 1
+    },
+    {
+      "id": "iw3wvpxywm",
+      "name": {
+        "tr": "Paketler",
+        "en": "Packages",
+        "ar": "الباقات"
+      },
+      "description": {
+        "tr": "Üç çekim paketi ve sık sorulan sorular (kurgusal fiyatlar).",
+        "en": "Three shoot packages and frequently asked questions (fictional prices).",
+        "ar": "ثلاث باقات تصوير والأسئلة الشائعة (أسعار افتراضية)."
+      },
+      "path": "paketler",
+      "icon": "sell",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "g3pr01",
+          "icr5hd"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "tw7j49ou3i",
+      "name": {
+        "tr": "Referanslar",
+        "en": "References",
+        "ar": "آراء العملاء"
+      },
+      "description": {
+        "tr": "Birlikte çalışılan kişilerden kurgusal demo yorumlar.",
+        "en": "Fictional demo reviews from people worked with.",
+        "ar": "تقييمات تجريبية افتراضية ممن تم العمل معهم."
+      },
+      "path": "referanslar",
+      "icon": "reviews",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "47e2pm",
+          "g3ca01"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "cxg6hta67k",
+      "name": {
+        "tr": "Çekim rezervasyonu",
+        "en": "Book a shoot",
+        "ar": "حجز جلسة"
+      },
+      "description": {
+        "tr": "Çekim türü, fotoğrafçı, gün ve saat seçerek rezervasyon (demo).",
+        "en": "Book by choosing the type of shoot, photographer, day and time (demo).",
+        "ar": "احجز باختيار نوع الجلسة والمصوّر واليوم والوقت (تجريبي)."
+      },
+      "path": "cekim-rezervasyon",
+      "icon": "event",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "rmvkxc"
+        ],
+        "footer": []
+      },
+      "index": 4
+    },
+    {
+      "name": {
+        "tr": "Hakkımda",
+        "en": "About",
+        "ar": "نبذة عني"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimda",
+      "category": "",
+      "url": "",
+      "index": 5,
+      "icon": "person",
+      "desing": {
+        "header": [],
+        "body": [
+          "g3in01",
+          "g3ca01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Fotoğrafçı Deniz Altan hakkında (kurgusal).",
+        "en": "About photographer Deniz Altan (fictional).",
+        "ar": "عن المصوّر دنيز ألتان (افتراضي)."
+      }
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بي"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 6,
+      "icon": "mail",
+      "desing": {
+        "header": [],
+        "body": [
+          "g3ct01",
+          "g3mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve görüşme saatleri (kurgusal).",
+        "en": "Address, phone and meeting hours (fictional).",
+        "ar": "العنوان والهاتف وساعات اللقاء (افتراضية)."
+      }
+    }
+  ],
+  "desc": []
+}

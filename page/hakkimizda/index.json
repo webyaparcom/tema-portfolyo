@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Hakkımda",
+    "en": "About",
+    "ar": "نبذة عني"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimda",
+  "index": 5,
+  "icon": "person",
+  "desing": {
+    "header": [],
+    "body": [
+      "g3in01",
+      "g3ca01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Fotoğrafçı Deniz Altan hakkında (kurgusal).",
+    "en": "About photographer Deniz Altan (fictional).",
+    "ar": "عن المصوّر دنيز ألتان (افتراضي)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Hakkımda",
+    "en": "About",
+    "ar": "نبذة عني"
+  },
+  "keyword": {
+    "tr": "hakkımda, fotoğrafçı",
+    "en": "about, photographer",
+    "ar": "نبذة عني، مصوّر"
+  },
+  "text": {},
+  "update": "2026-10-30T18:58:31.905Z",
+  "date": "2026-10-30"
+}

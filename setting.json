@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Deniz Altan: Gaziantep merkezli kurgusal fotoğrafçı. Portre, sokak, mimari ve ürün fotoğrafçılığı; çekim paketleri ve çevrimiçi çekim rezervasyonu. (Demo site)",
+    "en": "Deniz Altan: a fictional photographer based in Gaziantep. Portrait, street, architecture and product photography; shoot packages and online shoot booking. (Demo site)",
+    "ar": "دنيز ألتان: مصوّر افتراضي مقيم في غازي عنتاب. تصوير بورتريه وشوارع وعمارة ومنتجات، مع باقات تصوير وحجز جلسات عبر الإنترنت. (موقع تجريبي)"
+  },
+  "keyword": {
+    "tr": "fotoğrafçı, portfolyo, portre, mimari fotoğraf, çekim rezervasyonu",
+    "en": "photographer, portfolio, portrait, architectural photography, shoot booking",
+    "ar": "مصوّر، معرض أعمال، بورتريه، تصوير معماري، حجز جلسة"
+  },
+  "category": "Galeri",
+  "name": "Deniz Altan",
+  "domain": "portfolyo.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "inter",
+    "heading": "inter",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "ibm-plex-sans-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#7A6A4F",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "0px",
+    "--mx-radius-md": "0px",
+    "--mx-radius-lg": "0px",
+    "--mx-radius-xl": "0px"
+  },
+  "icon": "icon.png"
+}

@@ -1,0 +1,2302 @@
+{
+  "data": [
+    {
+      "name": "Demo Bandı",
+      "path": "demo-bandi",
+      "local": "header",
+      "category": "demo",
+      "id": "g3db01",
+      "desing": {
+        "tone": "info",
+        "bandBg": "",
+        "bandFg": "",
+        "ctaHref": "https://webyapar.com/temalar",
+        "ariaLabel": {
+          "tr": "Demo site uyarısı",
+          "en": "Demo site notice",
+          "ar": "تنبيه الموقع التجريبي"
+        },
+        "text": {
+          "tr": "Bu bir demo sitedir — içerik kurgusaldır, ödeme alınmaz",
+          "en": "This is a demo site — the content is fictional and no payment is taken",
+          "ar": "هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        }
+      },
+      "version": "1.0.0",
+      "icon": "info",
+      "index": 0
+    },
+    {
+      "name": "Menü 4",
+      "path": "menu-4",
+      "local": "header",
+      "category": "menu",
+      "id": "g3mn01",
+      "desing": {
+        "logo": "logo.png",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "height": "72px",
+        "background-color": "var(--mx-site-bg, #ffffff)"
+      },
+      "version": "1.0.0",
+      "icon": "menu",
+      "index": 1
+    },
+    {
+      "name": "Galeri Masonry (Filtre + Lightbox)",
+      "path": "galeri-masonry",
+      "local": "body",
+      "category": "galeri",
+      "id": "g3gm01",
+      "desing": {
+        "max": "1280px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #ffffff)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "gap": "0px",
+        "radius": "8px",
+        "columns": {
+          "d": 4,
+          "t": 3,
+          "m": 2
+        },
+        "ratio": "auto",
+        "captions": "hover",
+        "filter": false,
+        "lightbox": true,
+        "lazy": true,
+        "urlPrefix": "",
+        "title": {
+          "tr": "Seçme işler",
+          "en": "Selected work",
+          "ar": "أعمال مختارة"
+        },
+        "description": {
+          "tr": "Son yıllardan sekiz kare. Büyütmek için dokunun. Tüm fotoğraflar kurgusaldır; yapay zekâ ile üretilmiştir ve başkasının eseri değildir.",
+          "en": "Eight frames from recent years. Tap to enlarge. All photographs are fictional and generated; none are another photographer’s work.",
+          "ar": "ثماني لقطات من السنوات الأخيرة. انقر للتكبير. جميع الصور افتراضية ومولَّدة، وليست من أعمال مصوّر آخر."
+        },
+        "allLabel": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "filterLabel": {
+          "tr": "Kategoriye göre filtrele",
+          "en": "Filter by category",
+          "ar": "التصفية حسب الفئة"
+        },
+        "countText": {
+          "zero": {
+            "ar": "لا توجد صور"
+          },
+          "one": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photo",
+            "ar": "صورة واحدة"
+          },
+          "two": {
+            "ar": "صورتان"
+          },
+          "few": {
+            "ar": "{n} صور"
+          },
+          "many": {
+            "ar": "{n} صورة"
+          },
+          "other": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photos",
+            "ar": "{n} صورة"
+          }
+        },
+        "emptyText": {
+          "tr": "Henüz gösterilecek görsel yok.",
+          "en": "There are no images to show yet.",
+          "ar": "لا توجد صور لعرضها بعد."
+        },
+        "lightboxLabels": {
+          "dialog": {
+            "tr": "Görsel görüntüleyici",
+            "en": "Image viewer",
+            "ar": "عارض الصور"
+          },
+          "close": {
+            "tr": "Kapat",
+            "en": "Close",
+            "ar": "إغلاق"
+          },
+          "prev": {
+            "tr": "Önceki görsel",
+            "en": "Previous image",
+            "ar": "الصورة السابقة"
+          },
+          "next": {
+            "tr": "Sonraki görsel",
+            "en": "Next image",
+            "ar": "الصورة التالية"
+          },
+          "counter": {
+            "tr": "{i} / {n}",
+            "en": "{i} / {n}",
+            "ar": "{i} من {n}"
+          }
+        },
+        "cats": [
+          {
+            "id": "manzara",
+            "name": {
+              "tr": "Manzara ve doğa",
+              "en": "Landscape and nature",
+              "ar": "المناظر الطبيعية"
+            }
+          },
+          {
+            "id": "portre",
+            "name": {
+              "tr": "Portre",
+              "en": "Portrait",
+              "ar": "البورتريه"
+            }
+          },
+          {
+            "id": "sokak",
+            "name": {
+              "tr": "Şehir ve sokak",
+              "en": "City and street",
+              "ar": "المدينة والشارع"
+            }
+          },
+          {
+            "id": "mimari",
+            "name": {
+              "tr": "Mimari ve nesne",
+              "en": "Architecture and objects",
+              "ar": "العمارة والأشياء"
+            }
+          }
+        ]
+      },
+      "version": "1.0.0",
+      "icon": "photo_library",
+      "data": [
+        {
+          "img": "portfolyo-galeri-10.webp",
+          "cat": "mimari",
+          "w": 800,
+          "h": 800,
+          "title": {
+            "tr": "Işık ve gölge",
+            "en": "Light and shadow",
+            "ar": "الضوء والظل"
+          },
+          "alt": {
+            "tr": "Beyaz duvarda soyut ışık ve gölge deseni",
+            "en": "Abstract light and shadow pattern on a white wall",
+            "ar": "نمط مجرّد من الضوء والظل على جدار أبيض"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-4.webp",
+          "cat": "mimari",
+          "w": 800,
+          "h": 800,
+          "title": {
+            "tr": "Seramik fincan",
+            "en": "Ceramic cup",
+            "ar": "كوب خزفي"
+          },
+          "alt": {
+            "tr": "Beton yüzeyde minimal seramik fincan",
+            "en": "A minimal ceramic cup on a concrete surface",
+            "ar": "كوب خزفي بسيط على سطح خرساني"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-3.webp",
+          "cat": "mimari",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Spiral merdiven",
+            "en": "Spiral staircase",
+            "ar": "درج حلزوني"
+          },
+          "alt": {
+            "tr": "Yukarıdan simetrik spiral merdiven, tek renk",
+            "en": "Symmetrical spiral staircase seen from above, monochrome",
+            "ar": "درج حلزوني متناظر من الأعلى بلون واحد"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-6.webp",
+          "cat": "portre",
+          "w": 600,
+          "h": 900,
+          "title": {
+            "tr": "Usta",
+            "en": "The craftsman",
+            "ar": "الحِرفي"
+          },
+          "alt": {
+            "tr": "Aletleriyle çalışan yaşlı bir usta, siyah beyaz portre (kurgusal)",
+            "en": "An elderly craftsman at work with his tools, black and white portrait (fictional)",
+            "ar": "حِرفي مسنّ يعمل بأدواته، بورتريه بالأبيض والأسود (افتراضي)"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-9.webp",
+          "cat": "portre",
+          "w": 600,
+          "h": 900,
+          "title": {
+            "tr": "Beyaz gömlek",
+            "en": "White shirt",
+            "ar": "القميص الأبيض"
+          },
+          "alt": {
+            "tr": "Düz duvar önünde beyaz giysili modelin arkadan portresi (kurgusal)",
+            "en": "Back view of a model in white clothes against a plain wall (fictional)",
+            "ar": "صورة من الخلف لعارضة بملابس بيضاء أمام جدار سادة (افتراضية)"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-5.webp",
+          "cat": "manzara",
+          "w": 900,
+          "h": 600,
+          "title": {
+            "tr": "Kayalar ve deniz",
+            "en": "Rocks and sea",
+            "ar": "صخور وبحر"
+          },
+          "alt": {
+            "tr": "Alacakaranlıkta uzun pozlamayla deniz ve kıyı kayaları",
+            "en": "Long-exposure sea and coastal rocks at dusk",
+            "ar": "بحر بتعريض طويل وصخور ساحلية عند الغسق"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-2.webp",
+          "cat": "sokak",
+          "w": 600,
+          "h": 900,
+          "title": {
+            "tr": "Yağmurlu sokak",
+            "en": "Rainy alley",
+            "ar": "زقاق ماطر"
+          },
+          "alt": {
+            "tr": "Islak arnavut kaldırımlı sokakta şemsiyeli yalnız bir kişi",
+            "en": "A lone person with an umbrella on a wet cobblestone alley",
+            "ar": "شخص وحيد يحمل مظلة في زقاق مرصوف بالحجارة المبللة"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-11.webp",
+          "cat": "manzara",
+          "w": 900,
+          "h": 600,
+          "title": {
+            "tr": "Çöl kumulları",
+            "en": "Desert dunes",
+            "ar": "كثبان الصحراء"
+          },
+          "alt": {
+            "tr": "Gün doğumunda keskin sırt çizgili çöl kumulları",
+            "en": "Desert dunes with sharp ridge lines at sunrise",
+            "ar": "كثبان صحراوية بخطوط قمم حادة عند شروق الشمس"
+          }
+        }
+      ],
+      "index": 2
+    },
+    {
+      "name": "Fiyatlandırma 1",
+      "path": "pricing-1",
+      "local": "body",
+      "category": "pricing",
+      "id": "g3pr01",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "badge": {
+          "tr": "Paketler",
+          "en": "Packages",
+          "ar": "الباقات"
+        },
+        "title": {
+          "tr": "Çekim paketleri",
+          "en": "Shooting packages",
+          "ar": "باقات التصوير"
+        },
+        "description": {
+          "tr": "Fiyatlar kurgusaldır ve KDV dahildir. İhtiyacınıza göre ek süre ya da ek baskı eklenebilir.",
+          "en": "Prices are fictional and include VAT. Extra time or additional prints can be added as needed.",
+          "ar": "الأسعار افتراضية وتشمل ضريبة القيمة المضافة. يمكن إضافة وقت إضافي أو طبعات إضافية حسب الحاجة."
+        }
+      },
+      "version": "1.0.0",
+      "icon": "payments",
+      "data": [
+        {
+          "plan": {
+            "tr": "Mini seans",
+            "en": "Mini session",
+            "ar": "جلسة مصغّرة"
+          },
+          "price": "₺3.500",
+          "period": {
+            "tr": "/ çekim",
+            "en": "/ session",
+            "ar": "/ جلسة"
+          },
+          "note": {
+            "tr": "Hızlı bir portre ya da profil fotoğrafı için",
+            "en": "For a quick portrait or profile picture",
+            "ar": "لبورتريه سريع أو صورة شخصية"
+          },
+          "features": {
+            "tr": "1 saat çekim|Tek mekân|20 rötuşlu fotoğraf|Çevrimiçi galeri|7 gün içinde teslim",
+            "en": "1-hour shoot|One location|20 retouched photos|Online gallery|Delivered within 7 days",
+            "ar": "ساعة تصوير|موقع واحد|20 صورة محرَّرة|معرض إلكتروني|التسليم خلال 7 أيام"
+          },
+          "ctaText": {
+            "tr": "Seans ayırt",
+            "en": "Book a session",
+            "ar": "احجز جلسة"
+          },
+          "ctaUrl": "../cekim-rezervasyon/",
+          "featured": false
+        },
+        {
+          "plan": {
+            "tr": "Standart",
+            "en": "Standard",
+            "ar": "قياسية"
+          },
+          "price": "₺6.900",
+          "period": {
+            "tr": "/ çekim",
+            "en": "/ session",
+            "ar": "/ جلسة"
+          },
+          "note": {
+            "tr": "Aile, çift ve küçük marka çekimleri için",
+            "en": "For family, couple and small brand shoots",
+            "ar": "لجلسات العائلة والأزواج والعلامات الصغيرة"
+          },
+          "features": {
+            "tr": "3 saat çekim|İki mekân|50 rötuşlu fotoğraf|Baskıya hazır dosyalar|10 gün içinde teslim",
+            "en": "3-hour shoot|Two locations|50 retouched photos|Print-ready files|Delivered within 10 days",
+            "ar": "3 ساعات تصوير|موقعان|50 صورة محرَّرة|ملفات جاهزة للطباعة|التسليم خلال 10 أيام"
+          },
+          "ctaText": {
+            "tr": "Seans ayırt",
+            "en": "Book a session",
+            "ar": "احجز جلسة"
+          },
+          "ctaUrl": "../cekim-rezervasyon/",
+          "featured": true,
+          "flag": {
+            "tr": "En çok tercih edilen",
+            "en": "Most popular",
+            "ar": "الأكثر طلبًا"
+          }
+        },
+        {
+          "plan": {
+            "tr": "Kapsamlı",
+            "en": "Complete",
+            "ar": "شاملة"
+          },
+          "price": "₺12.500",
+          "period": {
+            "tr": "/ çekim",
+            "en": "/ session",
+            "ar": "/ جلسة"
+          },
+          "note": {
+            "tr": "Mimari, ürün serisi ve etkinlikler için",
+            "en": "For architecture, product ranges and events",
+            "ar": "للعمارة وسلاسل المنتجات والفعاليات"
+          },
+          "features": {
+            "tr": "Yarım gün çekim|Çoklu mekân|100 rötuşlu fotoğraf|2 adet 30×40 baskı|Albüm tasarımı",
+            "en": "Half-day shoot|Multiple locations|100 retouched photos|Two 30×40 prints|Album design",
+            "ar": "نصف يوم تصوير|مواقع متعددة|100 صورة محرَّرة|طبعتان 30×40|تصميم ألبوم"
+          },
+          "ctaText": {
+            "tr": "Seans ayırt",
+            "en": "Book a session",
+            "ar": "احجز جلسة"
+          },
+          "ctaUrl": "../cekim-rezervasyon/",
+          "featured": false
+        }
+      ],
+      "index": 3
+    },
+    {
+      "name": "CTA Şerit 1",
+      "path": "cta-1",
+      "local": "body",
+      "category": "cta",
+      "id": "g3ca01",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "btnbg": "var(--mx-site-surface, #ffffff)",
+        "btncolor": "var(--mx-site-text, #1b1b1b)",
+        "title": {
+          "tr": "Birlikte çalışalım",
+          "en": "Let’s work together",
+          "ar": "لنعمل معًا"
+        },
+        "description": {
+          "tr": "Çekim tarihiniz için müsaitlik sorun; bu sitedeki rezervasyon formu demodur.",
+          "en": "Ask about availability for your shoot date; the booking form on this site is a demo.",
+          "ar": "اسأل عن التوفر لموعد جلستك؛ نموذج الحجز في هذا الموقع تجريبي."
+        },
+        "btn1Text": {
+          "tr": "Çekim ayırt",
+          "en": "Book a shoot",
+          "ar": "احجز جلسة"
+        },
+        "btn1Url": "cekim-rezervasyon",
+        "btn2Text": {
+          "tr": "Hakkımda",
+          "en": "About me",
+          "ar": "نبذة عني"
+        },
+        "btn2Url": "hakkimda"
+      },
+      "version": "1.1.0",
+      "icon": "campaign",
+      "index": 4
+    },
+    {
+      "name": "Footer 3",
+      "path": "footer-3",
+      "local": "footer",
+      "category": "footer",
+      "id": "g3ft01",
+      "desing": {
+        "showlang": true,
+        "bgcolor": "var(--mx-site-surface-2, #f1f1ee)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "minimal_design": true,
+        "social_media": false
+      },
+      "version": "1.0.0",
+      "icon": "widgets",
+      "data": [],
+      "index": 5
+    },
+    {
+      "name": "İletişim",
+      "path": "contact-3",
+      "local": "body",
+      "category": "contact",
+      "id": "g3ct01",
+      "desing": {
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "name": {
+          "tr": "Bana ulaşın",
+          "en": "Get in touch",
+          "ar": "تواصل معي"
+        },
+        "margin": "30px 0px 30px 0px",
+        "linkcolor": "var(--mx-site-primary, #2563eb)"
+      },
+      "version": "1.0.0",
+      "icon": "contact_mail",
+      "data": [
+        {
+          "icon": "phone",
+          "text": "+90 342 000 00 00",
+          "url": ""
+        },
+        {
+          "icon": "email",
+          "text": "merhaba@denizaltan.example"
+        },
+        {
+          "icon": "map",
+          "text": {
+            "tr": "Atölye Sokak No: 12, Şahinbey, Gaziantep (kurgusal adres)",
+            "en": "12 Atolye Street, Sahinbey, Gaziantep (fictional address)",
+            "ar": "شارع الأتيليه رقم 12، شاهين بي، غازي عنتاب (عنوان افتراضي)"
+          }
+        },
+        {
+          "icon": "schedule",
+          "text": {
+            "tr": "Pzt–Cmt 10:00 – 18:00 (randevu ile)",
+            "en": "Mon–Sat 10:00 – 18:00 (by appointment)",
+            "ar": "الاثنين–السبت 10:00 – 18:00 (بموعد مسبق)"
+          },
+          "url": ""
+        }
+      ],
+      "index": 6
+    },
+    {
+      "name": "Maps",
+      "path": "map-2",
+      "local": "body",
+      "category": "map",
+      "id": "g3mp01",
+      "desing": {
+        "height": "200px",
+        "opacity": "0.5",
+        "backgroundcolor": "#ffffff",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "img": "map.png",
+        "externalUrl": "",
+        "margin": "0px"
+      },
+      "version": "1.0.0",
+      "icon": "widgets",
+      "index": 7
+    },
+    {
+      "name": "Tanıtım Modülü",
+      "path": "module-1",
+      "local": "body",
+      "category": "module",
+      "id": "g3in01",
+      "desing": {
+        "name": {
+          "tr": "Hakkımda",
+          "en": "About me",
+          "ar": "نبذة عني"
+        },
+        "description": {
+          "tr": "Merhaba, ben Deniz Altan; Gaziantep’te çalışan kurgusal bir demo fotoğrafçıyım. On iki yıldır portre, sokak, mimari ve ürün fotoğrafı çekiyorum. Sade kompozisyonu, doğal ışığı ve sessiz anları severim. Bu sitedeki kişi, adres ve fiyatlar kurgusaldır; fotoğraflar yapay zekâ ile üretilmiştir.",
+          "en": "Hello, I am Deniz Altan, a fictional demo photographer working in Gaziantep. For twelve years I have shot portraits, street, architecture and product photography. I like simple composition, natural light and quiet moments. The person, address and prices on this site are fictional; the photographs are generated.",
+          "ar": "مرحبًا، أنا دنيز ألتان، مصوّر تجريبي افتراضي يعمل في غازي عنتاب. أصوّر منذ اثني عشر عامًا البورتريه والشوارع والعمارة والمنتجات. أحب التكوين البسيط والضوء الطبيعي واللحظات الهادئة. الشخص والعنوان والأسعار في هذا الموقع افتراضية، والصور مولَّدة."
+        },
+        "name2": {
+          "tr": "Yaklaşımım",
+          "en": "My approach",
+          "ar": "أسلوبي"
+        },
+        "spot2": {
+          "tr": "Abartısız rötuş, doğal ışık, tek renk ağırlıklı bir görsel dil.",
+          "en": "Restrained retouching, natural light and a mostly monochrome visual language.",
+          "ar": "تحرير غير مبالغ فيه وضوء طبيعي ولغة بصرية تميل إلى اللون الواحد."
+        },
+        "icon2": "contrast",
+        "name3": {
+          "tr": "Çalışma biçimim",
+          "en": "How I work",
+          "ar": "طريقة عملي"
+        },
+        "spot3": {
+          "tr": "Önce konuşur, sonra planlar, en son çekerim; her seans sonunda çevrimiçi galeri teslim ederim.",
+          "en": "I talk first, plan next and shoot last; every session ends with an online gallery delivery.",
+          "ar": "أتحدث أولًا ثم أخطّط ثم أصوّر؛ وأسلّم في نهاية كل جلسة معرضًا إلكترونيًا."
+        },
+        "icon3": "photo_camera",
+        "img": "portfolyo-hero-portre.webp",
+        "bgcolor": "var(--mx-site-surface, #ffffff)",
+        "fontcolor": "var(--mx-site-text, #1b1b1b)",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Hakkımda",
+          "en": "About me",
+          "ar": "نبذة عني"
+        }
+      },
+      "version": "1.1.0",
+      "icon": "business",
+      "index": 8
+    },
+    {
+      "name": "Galeri Masonry (Filtre + Lightbox)",
+      "path": "galeri-masonry",
+      "local": "body",
+      "category": "galeri",
+      "id": "g3gm02",
+      "desing": {
+        "max": "1280px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #ffffff)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "gap": "0px",
+        "radius": "8px",
+        "columns": {
+          "d": 3,
+          "t": 3,
+          "m": 2
+        },
+        "ratio": "auto",
+        "captions": "hover",
+        "filter": true,
+        "lightbox": true,
+        "lazy": true,
+        "urlPrefix": "",
+        "title": {
+          "tr": "Projeler",
+          "en": "Projects",
+          "ar": "الأعمال"
+        },
+        "description": {
+          "tr": "Manzaradan portreye, sokaktan mimariye seçilmiş kareler. Kategoriye göre süzün, büyütmek için dokunun; ←/→ ile gezin, Esc ile kapatın. Tüm fotoğraflar kurgusaldır; yapay zekâ ile üretilmiştir ve başkasının eseri değildir.",
+          "en": "Selected frames from landscape to portrait and from street to architecture. Filter by category, tap to enlarge; browse with ←/→ and close with Esc. All photographs are fictional and generated; none are another photographer’s work.",
+          "ar": "لقطات مختارة من المناظر إلى البورتريه ومن الشارع إلى العمارة. صفِّ حسب الفئة وانقر للتكبير، وتنقّل بالأسهم ←/→ وأغلق بمفتاح Esc. جميع الصور افتراضية ومولَّدة، وليست من أعمال مصوّر آخر."
+        },
+        "allLabel": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "filterLabel": {
+          "tr": "Kategoriye göre filtrele",
+          "en": "Filter by category",
+          "ar": "التصفية حسب الفئة"
+        },
+        "countText": {
+          "zero": {
+            "ar": "لا توجد صور"
+          },
+          "one": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photo",
+            "ar": "صورة واحدة"
+          },
+          "two": {
+            "ar": "صورتان"
+          },
+          "few": {
+            "ar": "{n} صور"
+          },
+          "many": {
+            "ar": "{n} صورة"
+          },
+          "other": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photos",
+            "ar": "{n} صورة"
+          }
+        },
+        "emptyText": {
+          "tr": "Henüz gösterilecek görsel yok.",
+          "en": "There are no images to show yet.",
+          "ar": "لا توجد صور لعرضها بعد."
+        },
+        "lightboxLabels": {
+          "dialog": {
+            "tr": "Görsel görüntüleyici",
+            "en": "Image viewer",
+            "ar": "عارض الصور"
+          },
+          "close": {
+            "tr": "Kapat",
+            "en": "Close",
+            "ar": "إغلاق"
+          },
+          "prev": {
+            "tr": "Önceki görsel",
+            "en": "Previous image",
+            "ar": "الصورة السابقة"
+          },
+          "next": {
+            "tr": "Sonraki görsel",
+            "en": "Next image",
+            "ar": "الصورة التالية"
+          },
+          "counter": {
+            "tr": "{i} / {n}",
+            "en": "{i} / {n}",
+            "ar": "{i} من {n}"
+          }
+        },
+        "cats": [
+          {
+            "id": "manzara",
+            "name": {
+              "tr": "Manzara ve doğa",
+              "en": "Landscape and nature",
+              "ar": "المناظر الطبيعية"
+            }
+          },
+          {
+            "id": "portre",
+            "name": {
+              "tr": "Portre",
+              "en": "Portrait",
+              "ar": "البورتريه"
+            }
+          },
+          {
+            "id": "sokak",
+            "name": {
+              "tr": "Şehir ve sokak",
+              "en": "City and street",
+              "ar": "المدينة والشارع"
+            }
+          },
+          {
+            "id": "mimari",
+            "name": {
+              "tr": "Mimari ve nesne",
+              "en": "Architecture and objects",
+              "ar": "العمارة والأشياء"
+            }
+          }
+        ]
+      },
+      "version": "1.0.0",
+      "icon": "photo_library",
+      "data": [
+        {
+          "img": "portfolyo-galeri-2.webp",
+          "cat": "sokak",
+          "w": 600,
+          "h": 900,
+          "title": {
+            "tr": "Yağmurlu sokak",
+            "en": "Rainy alley",
+            "ar": "زقاق ماطر"
+          },
+          "alt": {
+            "tr": "Islak arnavut kaldırımlı sokakta şemsiyeli yalnız bir kişi",
+            "en": "A lone person with an umbrella on a wet cobblestone alley",
+            "ar": "شخص وحيد يحمل مظلة في زقاق مرصوف بالحجارة المبللة"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-4.webp",
+          "cat": "mimari",
+          "w": 800,
+          "h": 800,
+          "title": {
+            "tr": "Seramik fincan",
+            "en": "Ceramic cup",
+            "ar": "كوب خزفي"
+          },
+          "alt": {
+            "tr": "Beton yüzeyde minimal seramik fincan",
+            "en": "A minimal ceramic cup on a concrete surface",
+            "ar": "كوب خزفي بسيط على سطح خرساني"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-6.webp",
+          "cat": "portre",
+          "w": 600,
+          "h": 900,
+          "title": {
+            "tr": "Usta",
+            "en": "The craftsman",
+            "ar": "الحِرفي"
+          },
+          "alt": {
+            "tr": "Aletleriyle çalışan yaşlı bir usta, siyah beyaz portre (kurgusal)",
+            "en": "An elderly craftsman at work with his tools, black and white portrait (fictional)",
+            "ar": "حِرفي مسنّ يعمل بأدواته، بورتريه بالأبيض والأسود (افتراضي)"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-5.webp",
+          "cat": "manzara",
+          "w": 900,
+          "h": 600,
+          "title": {
+            "tr": "Kayalar ve deniz",
+            "en": "Rocks and sea",
+            "ar": "صخور وبحر"
+          },
+          "alt": {
+            "tr": "Alacakaranlıkta uzun pozlamayla deniz ve kıyı kayaları",
+            "en": "Long-exposure sea and coastal rocks at dusk",
+            "ar": "بحر بتعريض طويل وصخور ساحلية عند الغسق"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-7.webp",
+          "cat": "sokak",
+          "w": 900,
+          "h": 600,
+          "title": {
+            "tr": "Mavi saatte şehir",
+            "en": "City at blue hour",
+            "ar": "المدينة في الساعة الزرقاء"
+          },
+          "alt": {
+            "tr": "Mavi saatte ışık izleriyle şehir silüeti",
+            "en": "City skyline at blue hour with light trails",
+            "ar": "أفق المدينة في الساعة الزرقاء مع آثار الأضواء"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-1.webp",
+          "cat": "manzara",
+          "w": 900,
+          "h": 600,
+          "title": {
+            "tr": "Şafak sisi",
+            "en": "Dawn mist",
+            "ar": "ضباب الفجر"
+          },
+          "alt": {
+            "tr": "Şafakta sis içinde dağ silsileleri, siyah beyaz",
+            "en": "Misty mountain ridges at dawn, black and white",
+            "ar": "سلاسل جبلية يلفها الضباب عند الفجر، بالأبيض والأسود"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-12.webp",
+          "cat": "sokak",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Eski tekne",
+            "en": "Old boat",
+            "ar": "قارب قديم"
+          },
+          "alt": {
+            "tr": "Sakin bir limanda şafakta eski ahşap tekne",
+            "en": "An old wooden boat in a calm harbour at dawn",
+            "ar": "قارب خشبي قديم في ميناء هادئ عند الفجر"
+          }
+        },
+        {
+          "img": "portfolyo-hero-portre.webp",
+          "cat": "portre",
+          "w": 1920,
+          "h": 1080,
+          "title": {
+            "tr": "Profil",
+            "en": "Profile",
+            "ar": "لقطة جانبية"
+          },
+          "alt": {
+            "tr": "Parlak pencere önünde profilden portre (kurgusal)",
+            "en": "Profile portrait in front of a bright window (fictional)",
+            "ar": "بورتريه جانبي أمام نافذة مضيئة (افتراضي)"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-11.webp",
+          "cat": "manzara",
+          "w": 900,
+          "h": 600,
+          "title": {
+            "tr": "Çöl kumulları",
+            "en": "Desert dunes",
+            "ar": "كثبان الصحراء"
+          },
+          "alt": {
+            "tr": "Gün doğumunda keskin sırt çizgili çöl kumulları",
+            "en": "Desert dunes with sharp ridge lines at sunrise",
+            "ar": "كثبان صحراوية بخطوط قمم حادة عند شروق الشمس"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-9.webp",
+          "cat": "portre",
+          "w": 600,
+          "h": 900,
+          "title": {
+            "tr": "Beyaz gömlek",
+            "en": "White shirt",
+            "ar": "القميص الأبيض"
+          },
+          "alt": {
+            "tr": "Düz duvar önünde beyaz giysili modelin arkadan portresi (kurgusal)",
+            "en": "Back view of a model in white clothes against a plain wall (fictional)",
+            "ar": "صورة من الخلف لعارضة بملابس بيضاء أمام جدار سادة (افتراضية)"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-3.webp",
+          "cat": "mimari",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Spiral merdiven",
+            "en": "Spiral staircase",
+            "ar": "درج حلزوني"
+          },
+          "alt": {
+            "tr": "Yukarıdan simetrik spiral merdiven, tek renk",
+            "en": "Symmetrical spiral staircase seen from above, monochrome",
+            "ar": "درج حلزوني متناظر من الأعلى بلون واحد"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-10.webp",
+          "cat": "mimari",
+          "w": 800,
+          "h": 800,
+          "title": {
+            "tr": "Işık ve gölge",
+            "en": "Light and shadow",
+            "ar": "الضوء والظل"
+          },
+          "alt": {
+            "tr": "Beyaz duvarda soyut ışık ve gölge deseni",
+            "en": "Abstract light and shadow pattern on a white wall",
+            "ar": "نمط مجرّد من الضوء والظل على جدار أبيض"
+          }
+        },
+        {
+          "img": "portfolyo-galeri-8.webp",
+          "cat": "manzara",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Çiy damlaları",
+            "en": "Dew drops",
+            "ar": "قطرات الندى"
+          },
+          "alt": {
+            "tr": "Su damlalarıyla kaplı yaprağın makro çekimi",
+            "en": "Macro shot of a leaf covered in water droplets",
+            "ar": "لقطة ماكرو لورقة تغطيها قطرات الماء"
+          }
+        }
+      ],
+      "index": 9
+    },
+    {
+      "name": "Demo Kredi Şeridi",
+      "description": "Demo sitelerin alt bilgisinde duran kredi şeridi: «Bu demo Webyapar tarafından hazırlanmıştır — Bu temayı iste». Marka adı çevrilmez (Latin, dir=ltr izole), bağlantı demo adına göre webyapar.com/temalar#<slug>. Üç dil (TR/EN/AR), mantıksal CSS (RTL), mobilde sarar, reduced-motion'a saygılı.",
+      "version": "1.0.0",
+      "icon": "campaign",
+      "category": "demo",
+      "tags": [
+        "demo",
+        "footer",
+        "kredi",
+        "rtl"
+      ],
+      "desing": {
+        "href": "https://webyapar.com/temalar#portfolyo",
+        "brand": "Webyapar",
+        "text": {
+          "tr": "Bu demo {brand} tarafından hazırlanmıştır —",
+          "en": "This demo was prepared by {brand} —",
+          "ar": "تم إعداد هذا العرض التجريبي بواسطة {brand} —"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "ariaLabel": {
+          "tr": "Demo bilgisi",
+          "en": "Demo credit",
+          "ar": "معلومات العرض التجريبي"
+        }
+      },
+      "id": "vxkyxu",
+      "path": "demo-kredi",
+      "local": "footer",
+      "data": [],
+      "index": 10
+    },
+    {
+      "name": "Hero 1",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "overlay": "linear-gradient(135deg, rgba(0,0,0,.55), rgba(0,0,0,.35))",
+        "title_accent": "linear-gradient(135deg, #ffffff, #ffffff)",
+        "btn_primary_bg": "var(--mx-site-primary, #2563eb)",
+        "btn_primary_color": "var(--mx-site-primary-contrast, #ffffff)",
+        "stat_accent": "#ffffff",
+        "shape1": "linear-gradient(135deg, rgba(255,255,255,.18), rgba(255,255,255,.04))",
+        "shape2": "linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.03))",
+        "shape3": "linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,.02))",
+        "title": {
+          "tr": "Işığı bir hikâyeye çeviriyorum",
+          "en": "I turn light into stories",
+          "ar": "أحوّل الضوء إلى حكايات"
+        },
+        "description": {
+          "tr": "Portre, sokak, mimari ve ürün fotoğrafçılığı; sade kompozisyon ve doğal ışık. Tüm görseller kurgusal ve üretilmiştir.",
+          "en": "Portrait, street, architecture and product photography with simple composition and natural light. All images are fictional and generated.",
+          "ar": "تصوير بورتريه وشوارع وعمارة ومنتجات بتكوين بسيط وضوء طبيعي. جميع الصور افتراضية ومولَّدة."
+        },
+        "badge": {
+          "tr": "Fotoğrafçı · Gaziantep",
+          "en": "Photographer · Gaziantep",
+          "ar": "مصوّر · غازي عنتاب"
+        },
+        "image": "/img/portfolyo-hero-portre.webp",
+        "alt": {
+          "tr": "Parlak pencere önünde profilden portre (kurgusal)",
+          "en": "Profile portrait in front of a bright window (fictional)",
+          "ar": "بورتريه جانبي أمام نافذة مضيئة (افتراضي)"
+        },
+        "btn1": {
+          "tr": "Projeleri gör",
+          "en": "View projects",
+          "ar": "استعرض الأعمال"
+        },
+        "btn1_url": "projeler",
+        "btn2": {
+          "tr": "Çekim ayırt",
+          "en": "Book a shoot",
+          "ar": "احجز جلسة"
+        },
+        "btn2_url": "cekim-rezervasyon",
+        "stats": {
+          "tr": "12|Yıllık deneyim|240|Tamamlanan çekim|9|Sergi",
+          "en": "12|Years of experience|240|Shoots completed|9|Exhibitions",
+          "ar": "12|سنة من الخبرة|240|جلسة منجزة|9|معارض"
+        }
+      },
+      "category": "hero",
+      "description": "Gradient hero: istatistikler, CTA, görsel alanı. Metinler cok dilli (tr/en); renkler --gradient--, --btn_primary_bg-- ile markaya uyumlanır. Buton URL pathnext (urunler, iletisim).",
+      "version": "1.1.0",
+      "icon": "hero",
+      "id": "y7jf7f",
+      "path": "hero-1",
+      "local": "body",
+      "data": [],
+      "index": 11
+    },
+    {
+      "name": "Kurumsal Değerler 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "badge": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "title": {
+          "tr": "Çekim hizmetleri",
+          "en": "Photography services",
+          "ar": "خدمات التصوير"
+        },
+        "description": {
+          "tr": "Portreden mimariye altı ana başlık.",
+          "en": "Six main areas, from portraits to architecture.",
+          "ar": "ستة مجالات رئيسية من البورتريه إلى العمارة."
+        },
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "icon": "portrait",
+          "name": {
+            "tr": "Portre çekimi",
+            "en": "Portrait sessions",
+            "ar": "جلسات البورتريه"
+          },
+          "description": {
+            "tr": "Doğal ışıkta sade, kişiliği öne çıkaran portreler; stüdyoda ya da mekânınızda.",
+            "en": "Simple portraits in natural light that bring out personality; in the studio or at your location.",
+            "ar": "بورتريه بسيط بالضوء الطبيعي يُبرز الشخصية؛ في الأتيليه أو في مكانك."
+          }
+        },
+        {
+          "icon": "family_restroom",
+          "name": {
+            "tr": "Aile ve çift çekimi",
+            "en": "Family and couple sessions",
+            "ar": "جلسات العائلة والأزواج"
+          },
+          "description": {
+            "tr": "Rahat, planlanmış poz içermeyen anlar; dış mekân ya da evde.",
+            "en": "Relaxed, unposed moments outdoors or at home.",
+            "ar": "لحظات عفوية غير مصطنعة في الهواء الطلق أو في المنزل."
+          }
+        },
+        {
+          "icon": "inventory_2",
+          "name": {
+            "tr": "Ürün ve katalog",
+            "en": "Product and catalogue",
+            "ar": "المنتجات والكتالوج"
+          },
+          "description": {
+            "tr": "Küçük markalar için temiz arka plan, tutarlı ışık ve e-ticarete hazır dosyalar.",
+            "en": "Clean backgrounds, consistent light and e-commerce-ready files for small brands.",
+            "ar": "خلفيات نظيفة وإضاءة متسقة وملفات جاهزة للتجارة الإلكترونية للعلامات الصغيرة."
+          }
+        },
+        {
+          "icon": "apartment",
+          "name": {
+            "tr": "Mimari ve iç mekân",
+            "en": "Architecture and interiors",
+            "ar": "العمارة والتصميم الداخلي"
+          },
+          "description": {
+            "tr": "Mimar ve tasarımcılar için düzgün perspektifli, doğru ışıklı proje fotoğrafları.",
+            "en": "Project photography with correct perspective and light for architects and designers.",
+            "ar": "تصوير مشاريع بمنظور صحيح وإضاءة دقيقة للمعماريين والمصمّمين."
+          }
+        },
+        {
+          "icon": "celebration",
+          "name": {
+            "tr": "Etkinlik ve davet",
+            "en": "Events and gatherings",
+            "ar": "الفعاليات والمناسبات"
+          },
+          "description": {
+            "tr": "Açılış, nişan ve küçük davetlerin kesintisiz, abartısız belgesi.",
+            "en": "An unobtrusive record of openings, engagements and small gatherings.",
+            "ar": "توثيق هادئ ومتواصل للافتتاحات والخطوبة والمناسبات الصغيرة."
+          }
+        },
+        {
+          "icon": "photo_album",
+          "name": {
+            "tr": "Baskı ve albüm",
+            "en": "Prints and albums",
+            "ar": "الطباعة والألبومات"
+          },
+          "description": {
+            "tr": "Müze kalitesinde baskı, çerçeve ve el yapımı albüm seçenekleri.",
+            "en": "Museum-quality prints, framing and handmade album options.",
+            "ar": "طباعة بجودة المتاحف وخيارات الإطارات والألبومات المصنوعة يدويًا."
+          }
+        }
+      ],
+      "category": "values",
+      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "version": "1.0.0",
+      "icon": "diamond",
+      "id": "9lge9j",
+      "path": "values-1",
+      "local": "body",
+      "index": 12
+    },
+    {
+      "name": "Kurumsal Değerler 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "badge": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "title": {
+          "tr": "Çekim hizmetlerim",
+          "en": "My photography services",
+          "ar": "خدمات التصوير لديّ"
+        },
+        "description": {
+          "tr": "İhtiyacınıza göre planlanan altı çekim türü; her biri ücretsiz bir ön görüşmeyle başlar.",
+          "en": "Six types of shoot planned around your needs; each starts with a free introductory chat.",
+          "ar": "ستة أنواع من الجلسات تُخطَّط حسب احتياجك؛ وتبدأ كلٌّ منها بلقاء تمهيدي مجاني."
+        },
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "icon": "portrait",
+          "name": {
+            "tr": "Portre çekimi",
+            "en": "Portrait sessions",
+            "ar": "جلسات البورتريه"
+          },
+          "description": {
+            "tr": "Doğal ışıkta sade, kişiliği öne çıkaran portreler; stüdyoda ya da mekânınızda.",
+            "en": "Simple portraits in natural light that bring out personality; in the studio or at your location.",
+            "ar": "بورتريه بسيط بالضوء الطبيعي يُبرز الشخصية؛ في الأتيليه أو في مكانك."
+          }
+        },
+        {
+          "icon": "family_restroom",
+          "name": {
+            "tr": "Aile ve çift çekimi",
+            "en": "Family and couple sessions",
+            "ar": "جلسات العائلة والأزواج"
+          },
+          "description": {
+            "tr": "Rahat, planlanmış poz içermeyen anlar; dış mekân ya da evde.",
+            "en": "Relaxed, unposed moments outdoors or at home.",
+            "ar": "لحظات عفوية غير مصطنعة في الهواء الطلق أو في المنزل."
+          }
+        },
+        {
+          "icon": "inventory_2",
+          "name": {
+            "tr": "Ürün ve katalog",
+            "en": "Product and catalogue",
+            "ar": "المنتجات والكتالوج"
+          },
+          "description": {
+            "tr": "Küçük markalar için temiz arka plan, tutarlı ışık ve e-ticarete hazır dosyalar.",
+            "en": "Clean backgrounds, consistent light and e-commerce-ready files for small brands.",
+            "ar": "خلفيات نظيفة وإضاءة متسقة وملفات جاهزة للتجارة الإلكترونية للعلامات الصغيرة."
+          }
+        },
+        {
+          "icon": "apartment",
+          "name": {
+            "tr": "Mimari ve iç mekân",
+            "en": "Architecture and interiors",
+            "ar": "العمارة والتصميم الداخلي"
+          },
+          "description": {
+            "tr": "Mimar ve tasarımcılar için düzgün perspektifli, doğru ışıklı proje fotoğrafları.",
+            "en": "Project photography with correct perspective and light for architects and designers.",
+            "ar": "تصوير مشاريع بمنظور صحيح وإضاءة دقيقة للمعماريين والمصمّمين."
+          }
+        },
+        {
+          "icon": "celebration",
+          "name": {
+            "tr": "Etkinlik ve davet",
+            "en": "Events and gatherings",
+            "ar": "الفعاليات والمناسبات"
+          },
+          "description": {
+            "tr": "Açılış, nişan ve küçük davetlerin kesintisiz, abartısız belgesi.",
+            "en": "An unobtrusive record of openings, engagements and small gatherings.",
+            "ar": "توثيق هادئ ومتواصل للافتتاحات والخطوبة والمناسبات الصغيرة."
+          }
+        },
+        {
+          "icon": "photo_album",
+          "name": {
+            "tr": "Baskı ve albüm",
+            "en": "Prints and albums",
+            "ar": "الطباعة والألبومات"
+          },
+          "description": {
+            "tr": "Müze kalitesinde baskı, çerçeve ve el yapımı albüm seçenekleri.",
+            "en": "Museum-quality prints, framing and handmade album options.",
+            "ar": "طباعة بجودة المتاحف وخيارات الإطارات والألبومات المصنوعة يدويًا."
+          }
+        }
+      ],
+      "category": "values",
+      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "version": "1.0.0",
+      "icon": "diamond",
+      "id": "oj3sql",
+      "path": "values-1",
+      "local": "body",
+      "index": 13
+    },
+    {
+      "name": "Kurumsal Değerler 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "badge": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "title": {
+          "tr": "Nasıl çalışıyorum?",
+          "en": "How I work",
+          "ar": "كيف أعمل؟"
+        },
+        "description": {
+          "tr": "Dört adımda, sürprizsiz bir akış.",
+          "en": "A four-step flow with no surprises.",
+          "ar": "مسار من أربع خطوات دون مفاجآت."
+        },
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "icon": "chat",
+          "name": {
+            "tr": "1. Görüşme",
+            "en": "1. Conversation",
+            "ar": "1. اللقاء"
+          },
+          "description": {
+            "tr": "Hedefinizi, mekânı ve tarzı konuşuruz; ücretsiz ve yükümlülüksüz.",
+            "en": "We talk about your goal, location and style; free and without obligation.",
+            "ar": "نتحدث عن هدفك والمكان والأسلوب؛ مجانًا ودون التزام."
+          }
+        },
+        {
+          "icon": "map",
+          "name": {
+            "tr": "2. Planlama",
+            "en": "2. Planning",
+            "ar": "2. التخطيط"
+          },
+          "description": {
+            "tr": "Gün, ışık ve mekân seçilir; kısa bir çekim planı paylaşılır.",
+            "en": "Day, light and location are chosen; a short shoot plan is shared.",
+            "ar": "نختار اليوم والإضاءة والمكان، ونشارك خطة تصوير مختصرة."
+          }
+        },
+        {
+          "icon": "photo_camera",
+          "name": {
+            "tr": "3. Çekim",
+            "en": "3. The shoot",
+            "ar": "3. التصوير"
+          },
+          "description": {
+            "tr": "Sakin bir akışla çekim; ekranda anlık seçim yapabilirsiniz.",
+            "en": "A calm session; you can pick favourites on screen as we go.",
+            "ar": "جلسة هادئة يمكنك خلالها اختيار المفضلة على الشاشة."
+          }
+        },
+        {
+          "icon": "download",
+          "name": {
+            "tr": "4. Rötuş ve teslim",
+            "en": "4. Retouching and delivery",
+            "ar": "4. التحرير والتسليم"
+          },
+          "description": {
+            "tr": "Seçilen kareler rötuşlanır ve çevrimiçi galeriden teslim edilir.",
+            "en": "Chosen frames are retouched and delivered through an online gallery.",
+            "ar": "تُحرَّر الصور المختارة وتُسلَّم عبر معرض إلكتروني."
+          }
+        }
+      ],
+      "category": "values",
+      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "version": "1.0.0",
+      "icon": "diamond",
+      "id": "dr9dme",
+      "path": "values-1",
+      "local": "body",
+      "index": 14
+    },
+    {
+      "name": "Müşteri Yorumları 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "starcolor": "var(--mx-site-primary, #2563eb)",
+        "badge": {
+          "tr": "Referanslar",
+          "en": "References",
+          "ar": "آراء العملاء"
+        },
+        "title": {
+          "tr": "Çalıştığım kişiler ne diyor?",
+          "en": "What people I have worked with say",
+          "ar": "ماذا يقول من عملتُ معهم؟"
+        },
+        "description": {
+          "tr": "Kurgusal demo yorumlar.",
+          "en": "Fictional demo reviews.",
+          "ar": "تقييمات تجريبية افتراضية."
+        },
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "name": "Ece Y.",
+          "role": {
+            "tr": "Mimar (demo yorum)",
+            "en": "Architect (demo review)",
+            "ar": "مهندسة معمارية (تقييم تجريبي)"
+          },
+          "rating": 5,
+          "img": "",
+          "text": {
+            "tr": "Projemizin ışığını ve çizgilerini tam yakaladı; teslim tarihi ve rötuş konusunda çok düzenli.",
+            "en": "Captured the light and lines of our project perfectly; very organised on delivery dates and retouching.",
+            "ar": "التقط ضوء مشروعنا وخطوطه بدقة، وهو منظّم جدًا في مواعيد التسليم والتحرير."
+          }
+        },
+        {
+          "name": "Kerem T.",
+          "role": {
+            "tr": "Seramik atölyesi sahibi (demo yorum)",
+            "en": "Ceramics studio owner (demo review)",
+            "ar": "صاحب مشغل خزف (تقييم تجريبي)"
+          },
+          "rating": 5,
+          "img": "",
+          "text": {
+            "tr": "Ürünlerimiz hiç olmadığı kadar sade ve gerçekçi göründü; katalogumuz tek seansta bitti.",
+            "en": "Our products looked simpler and more real than ever; the catalogue was done in a single session.",
+            "ar": "ظهرت منتجاتنا أبسط وأكثر واقعية من أي وقت مضى، وأُنجز الكتالوج في جلسة واحدة."
+          }
+        },
+        {
+          "name": "Selin A.",
+          "role": {
+            "tr": "Çift çekimi (demo yorum)",
+            "en": "Couple session (demo review)",
+            "ar": "جلسة أزواج (تقييم تجريبي)"
+          },
+          "rating": 5,
+          "img": "",
+          "text": {
+            "tr": "Poz vermek zorunda hissetmedik; fotoğraflarımızda gerçekten biz varız.",
+            "en": "We never felt we had to pose; the photos are really us.",
+            "ar": "لم نشعر بأننا مضطرون للتصنّع في الوقفة؛ الصور تعبّر عنا حقًا."
+          }
+        }
+      ],
+      "category": "testimonial",
+      "description": "Manuel müşteri yorumu kartları modülü. İsim, unvan, yıldız puanı ve yorum metnini responsive grid'de gösterir; fotoğraf yoksa baş harf avatarı kullanılır. Google'a bağımlı olmayan referans/yorum vitrini için kullanılır (otomatik çekim için google-yorumlar modülü).",
+      "version": "1.0.0",
+      "icon": "format_quote",
+      "id": "47e2pm",
+      "path": "testimonial-1",
+      "local": "body",
+      "index": 15
+    },
+    {
+      "name": "SSS Akordeon 1",
+      "desing": {
+        "max": "900px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "badge": {
+          "tr": "SSS",
+          "en": "FAQ",
+          "ar": "الأسئلة الشائعة"
+        },
+        "title": {
+          "tr": "Paketler hakkında sorular",
+          "en": "Questions about packages",
+          "ar": "أسئلة حول الباقات"
+        },
+        "description": {
+          "tr": "Seans öncesi en çok sorulanlar.",
+          "en": "The most common questions before a session.",
+          "ar": "أكثر الأسئلة تكرارًا قبل الجلسة."
+        },
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "question": {
+            "tr": "Fotoğrafların kullanım hakkı kimde?",
+            "en": "Who holds the rights to the photographs?",
+            "ar": "لمن حقوق استخدام الصور؟"
+          },
+          "answer": {
+            "tr": "Telif hakkı fotoğrafçıdadır; paket, kişisel ve (ürün çekimlerinde) ticari kullanım lisansını içerir. Kapsamlı lisans ayrıca konuşulur.",
+            "en": "Copyright stays with the photographer; each package includes a personal licence and, for product shoots, a commercial licence. Extended licences are discussed separately.",
+            "ar": "حقوق النشر للمصوّر؛ وتتضمن كل باقة ترخيص استخدام شخصي، وترخيصًا تجاريًا في جلسات المنتجات. أما التراخيص الموسّعة فتُناقَش على حدة."
+          }
+        },
+        {
+          "question": {
+            "tr": "Rötuşlu ve ham dosyalar teslim ediliyor mu?",
+            "en": "Do you deliver retouched and raw files?",
+            "ar": "هل تُسلَّم الملفات المحرَّرة والخام؟"
+          },
+          "answer": {
+            "tr": "Paketlerde rötuşlu JPEG dosyaları teslim edilir. Ham dosyalar yalnızca özel anlaşmayla verilir.",
+            "en": "Packages include retouched JPEG files. Raw files are provided only under a separate agreement.",
+            "ar": "تتضمن الباقات ملفات JPEG محرَّرة. لا تُقدَّم الملفات الخام إلا باتفاق خاص."
+          }
+        },
+        {
+          "question": {
+            "tr": "Seans iptal ya da ertelenebilir mi?",
+            "en": "Can a session be cancelled or rescheduled?",
+            "ar": "هل يمكن إلغاء الجلسة أو تأجيلها؟"
+          },
+          "answer": {
+            "tr": "Seanstan en az 48 saat önce haber vermeniz yeterlidir; hava durumu nedeniyle dış çekimler ücretsiz ertelenir.",
+            "en": "Just let us know at least 48 hours ahead; outdoor shoots affected by weather are rescheduled free of charge.",
+            "ar": "يكفي إبلاغنا قبل 48 ساعة على الأقل؛ وتُؤجَّل الجلسات الخارجية المتأثرة بالطقس مجانًا."
+          }
+        },
+        {
+          "question": {
+            "tr": "Fiyatlar gerçek mi?",
+            "en": "Are these prices real?",
+            "ar": "هل هذه الأسعار حقيقية؟"
+          },
+          "answer": {
+            "tr": "Hayır. Bu bir demo sitedir; fiyatlar ve paketler kurgusaldır.",
+            "en": "No. This is a demo site; prices and packages are fictional.",
+            "ar": "لا. هذا موقع تجريبي؛ الأسعار والباقات افتراضية."
+          }
+        }
+      ],
+      "category": "faq",
+      "description": "SSS akordeon modülü. Soru-cevap listesini tek seferde bir açık olacak şekilde akordeon düzende gösterir. Çok dilli veri, animasyonlu açılış, mobil uyum ve erişilebilirlik (aria-expanded) desteği içerir.",
+      "version": "1.0.0",
+      "icon": "quiz",
+      "id": "icr5hd",
+      "path": "faq-1",
+      "local": "body",
+      "index": 16
+    },
+    {
+      "name": "Randevu / Rezervasyon Formu",
+      "description": "Statik randevu ve rezervasyon sihirbazı (30 Eki 2026): hizmet → uzman → tarih → saat → bilgi → onay; masa kipi (kişi sayısı + bölüm) ve gösterim kipi. Sunucusuz: gönderim WhatsApp hazır mesaj, mailto veya .ics dosyası. Kendi takvimi (Pazartesi/Cumartesi hafta başı, kapalı günler, mola, bekleme günü), üç dil (tr/en/ar, RTL), KVKK onayı, demo kipinde tarayıcıda 'randevularım' listesi.",
+      "version": "1.0.0",
+      "icon": "event_available",
+      "category": "randevu",
+      "tags": [
+        "randevu",
+        "rezervasyon",
+        "takvim",
+        "form",
+        "whatsapp",
+        "ics"
+      ],
+      "desing": {
+        "max": "960px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "errcolor": "color-mix(in srgb, #c81e1e 72%, var(--mx-site-text, #1b1b1b))",
+        "mode": "randevu",
+        "submit": "whatsapp",
+        "demo": true,
+        "weekStart": "auto",
+        "leadDays": 2,
+        "maxDays": 60,
+        "maxPartySize": 8,
+        "masaDuration": 90,
+        "requireEmail": false,
+        "phone": "+90 342 000 00 00",
+        "email": "merhaba@denizaltan.example",
+        "location": {
+          "tr": "Atölye Sokak No: 12, Şahinbey, Gaziantep (kurgusal adres)",
+          "en": "12 Atolye Street, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع الأتيليه رقم 12، شاهين بي، غازي عنتاب (عنوان افتراضي)"
+        },
+        "badge": {
+          "tr": "Çekim rezervasyonu",
+          "en": "Shoot booking",
+          "ar": "حجز جلسة تصوير"
+        },
+        "title": {
+          "tr": "Çekim tarihinizi ayırtın",
+          "en": "Reserve your shoot date",
+          "ar": "احجز موعد جلستك"
+        },
+        "description": {
+          "tr": "Çekim türünü, fotoğrafçıyı, günü ve saati seçin. Bu form demodur; talebiniz yalnızca tarayıcınızda oluşturulur ve hiçbir yere gönderilmez.",
+          "en": "Choose the type of shoot, photographer, day and time. This form is a demo; your request is created in your browser only and is not sent anywhere.",
+          "ar": "اختر نوع الجلسة والمصوّر واليوم والوقت. هذا النموذج تجريبي؛ يُنشأ طلبك في متصفحك فقط ولا يُرسَل إلى أي جهة."
+        },
+        "noscript": {
+          "tr": "Randevu formunu kullanmak için tarayıcınızda JavaScript açık olmalıdır. Bunun yerine bizi arayabilirsiniz.",
+          "en": "JavaScript must be enabled in your browser to use the booking form. You can call us instead.",
+          "ar": "يجب تفعيل JavaScript في المتصفح لاستخدام نموذج الحجز. يمكنك الاتصال بنا بدلًا من ذلك."
+        },
+        "services": [
+          {
+            "id": "portre",
+            "name": {
+              "tr": "Portre çekimi",
+              "en": "Portrait session",
+              "ar": "جلسة بورتريه"
+            },
+            "duration": 60,
+            "price": 3500
+          },
+          {
+            "id": "aile",
+            "name": {
+              "tr": "Aile ve çift çekimi",
+              "en": "Family or couple session",
+              "ar": "جلسة عائلة أو أزواج"
+            },
+            "duration": 180,
+            "price": 6900
+          },
+          {
+            "id": "urun",
+            "name": {
+              "tr": "Ürün ve katalog çekimi",
+              "en": "Product and catalogue shoot",
+              "ar": "تصوير منتجات وكتالوج"
+            },
+            "duration": 120,
+            "price": 6900
+          },
+          {
+            "id": "mimari",
+            "name": {
+              "tr": "Mimari ve iç mekân",
+              "en": "Architecture and interiors",
+              "ar": "العمارة والتصميم الداخلي"
+            },
+            "duration": 240,
+            "price": 12500
+          },
+          {
+            "id": "etkinlik",
+            "name": {
+              "tr": "Etkinlik ve davet",
+              "en": "Event or gathering",
+              "ar": "فعالية أو مناسبة"
+            },
+            "duration": 180
+          }
+        ],
+        "staff": [
+          {
+            "id": "deniz",
+            "name": {
+              "tr": "Deniz Altan",
+              "en": "Deniz Altan",
+              "ar": "دنيز ألتان"
+            },
+            "role": {
+              "tr": "Baş fotoğrafçı",
+              "en": "Lead photographer",
+              "ar": "المصوّر الرئيسي"
+            },
+            "services": [
+              "portre",
+              "aile",
+              "etkinlik",
+              "mimari"
+            ]
+          },
+          {
+            "id": "mina",
+            "name": {
+              "tr": "Mina Sezer",
+              "en": "Mina Sezer",
+              "ar": "مينا سيزر"
+            },
+            "role": {
+              "tr": "Ürün ve iç mekân fotoğrafçısı",
+              "en": "Product and interior photographer",
+              "ar": "مصوّرة المنتجات والتصميم الداخلي"
+            },
+            "services": [
+              "urun",
+              "mimari",
+              "portre"
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "id": "ic",
+            "name": {
+              "tr": "İç salon",
+              "en": "Indoor",
+              "ar": "الصالة الداخلية"
+            }
+          },
+          {
+            "id": "bahce",
+            "name": {
+              "tr": "Bahçe",
+              "en": "Garden",
+              "ar": "الحديقة"
+            }
+          }
+        ],
+        "hours": {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "10:00",
+          "end": "18:00",
+          "slot": 60,
+          "breaks": [
+            {
+              "start": "13:00",
+              "end": "14:00"
+            }
+          ]
+        },
+        "closed": [
+          "2026-12-25",
+          "2026-12-31",
+          "2027-01-01"
+        ],
+        "kvkk": {
+          "text": {
+            "tr": "Kişisel verilerimin bu rezervasyon talebi için işlenmesine ilişkin aydınlatma metnini okudum.",
+            "en": "I have read the privacy notice on how my personal data is processed for this booking request.",
+            "ar": "لقد قرأتُ إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية لطلب الحجز هذا."
+          },
+          "href": "kisiselveriler"
+        },
+        "successText": {
+          "tr": "Talebiniz alındı. Çekim tarihi, fotoğrafçının onayından sonra kesinleşir. (Demo)",
+          "en": "Your request has been received. The shoot date is confirmed once the photographer approves it. (Demo)",
+          "ar": "تم استلام طلبك. يصبح موعد الجلسة مؤكدًا بعد موافقة المصوّر. (تجريبي)"
+        },
+        "ui": {
+          "stepsLabel": {
+            "tr": "Adımlar",
+            "en": "Steps",
+            "ar": "الخطوات"
+          },
+          "stepOf": {
+            "tr": "Adım {n} / {m}",
+            "en": "Step {n} of {m}",
+            "ar": "الخطوة {n} من {m}"
+          },
+          "s_service": {
+            "tr": "Hizmet",
+            "en": "Service",
+            "ar": "الخدمة"
+          },
+          "s_staff": {
+            "tr": "Uzman",
+            "en": "Specialist",
+            "ar": "المختص"
+          },
+          "s_party": {
+            "tr": "Kişi",
+            "en": "Guests",
+            "ar": "الضيوف"
+          },
+          "s_date": {
+            "tr": "Tarih",
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "s_time": {
+            "tr": "Saat",
+            "en": "Time",
+            "ar": "الوقت"
+          },
+          "s_info": {
+            "tr": "Bilgiler",
+            "en": "Details",
+            "ar": "البيانات"
+          },
+          "s_confirm": {
+            "tr": "Onay",
+            "en": "Confirm",
+            "ar": "التأكيد"
+          },
+          "back": {
+            "tr": "Geri",
+            "en": "Back",
+            "ar": "رجوع"
+          },
+          "next": {
+            "tr": "Devam",
+            "en": "Continue",
+            "ar": "متابعة"
+          },
+          "reqNote": {
+            "tr": "* ile işaretli alanlar zorunludur.",
+            "en": "Fields marked * are required.",
+            "ar": "الحقول المميزة بعلامة * إلزامية."
+          },
+          "t_service": {
+            "tr": "Hizmet seçin",
+            "en": "Choose a service",
+            "ar": "اختر الخدمة"
+          },
+          "minUnit": {
+            "tr": "{n} dk",
+            "en": "{n} min",
+            "ar": "{n} دقيقة"
+          },
+          "t_staff": {
+            "tr": "Uzman seçin",
+            "en": "Choose a specialist",
+            "ar": "اختر المختص"
+          },
+          "anyStaff": {
+            "tr": "Fark etmez",
+            "en": "No preference",
+            "ar": "لا تفضيل"
+          },
+          "anyStaffHint": {
+            "tr": "Uygun olan uzman atanır.",
+            "en": "The first available specialist is assigned.",
+            "ar": "يُسنَد الموعد إلى أول مختص متاح."
+          },
+          "t_party": {
+            "tr": "Kaç kişisiniz?",
+            "en": "How many guests?",
+            "ar": "كم عدد الضيوف؟"
+          },
+          "partyMinus": {
+            "tr": "Kişi sayısını azalt",
+            "en": "Decrease guests",
+            "ar": "تقليل عدد الضيوف"
+          },
+          "partyPlus": {
+            "tr": "Kişi sayısını artır",
+            "en": "Increase guests",
+            "ar": "زيادة عدد الضيوف"
+          },
+          "partyCount": {
+            "tr": {
+              "one": "{n} kişi",
+              "other": "{n} kişi"
+            },
+            "en": {
+              "one": "{n} guest",
+              "other": "{n} guests"
+            },
+            "ar": {
+              "zero": "{n} ضيف",
+              "one": "ضيف واحد",
+              "two": "ضيفان",
+              "few": "{n} ضيوف",
+              "many": "{n} ضيفًا",
+              "other": "{n} ضيف"
+            }
+          },
+          "groupHint": {
+            "tr": "{n} kişiden büyük gruplar için lütfen bizi arayın.",
+            "en": "For groups larger than {n}, please call us.",
+            "ar": "للمجموعات التي يزيد عددها عن {n}، يُرجى الاتصال بنا."
+          },
+          "t_section": {
+            "tr": "Bölüm tercihi",
+            "en": "Seating preference",
+            "ar": "تفضيل الجلسة"
+          },
+          "anySection": {
+            "tr": "Fark etmez",
+            "en": "No preference",
+            "ar": "لا تفضيل"
+          },
+          "t_date": {
+            "tr": "Tarih seçin",
+            "en": "Choose a date",
+            "ar": "اختر التاريخ"
+          },
+          "prevMonth": {
+            "tr": "Önceki ay",
+            "en": "Previous month",
+            "ar": "الشهر السابق"
+          },
+          "nextMonth": {
+            "tr": "Sonraki ay",
+            "en": "Next month",
+            "ar": "الشهر التالي"
+          },
+          "calHint": {
+            "tr": "Gezinmek için ok tuşlarını, seçmek için Enter tuşunu kullanın. Kapalı günler seçilemez.",
+            "en": "Use the arrow keys to move and Enter to select. Unavailable days cannot be chosen.",
+            "ar": "استخدم مفاتيح الأسهم للتنقل ومفتاح Enter للاختيار. لا يمكن اختيار الأيام غير المتاحة."
+          },
+          "dayUnavailable": {
+            "tr": "uygun değil",
+            "en": "unavailable",
+            "ar": "غير متاح"
+          },
+          "selectedDate": {
+            "tr": "Seçilen tarih: {d}",
+            "en": "Selected date: {d}",
+            "ar": "التاريخ المختار: {d}"
+          },
+          "t_time": {
+            "tr": "Saat seçin",
+            "en": "Choose a time",
+            "ar": "اختر الوقت"
+          },
+          "timesFor": {
+            "tr": "{d} için uygun saatler",
+            "en": "Available times for {d}",
+            "ar": "الأوقات المتاحة ليوم {d}"
+          },
+          "p_morning": {
+            "tr": "Sabah",
+            "en": "Morning",
+            "ar": "الصباح"
+          },
+          "p_afternoon": {
+            "tr": "Öğleden sonra",
+            "en": "Afternoon",
+            "ar": "بعد الظهر"
+          },
+          "p_evening": {
+            "tr": "Akşam",
+            "en": "Evening",
+            "ar": "المساء"
+          },
+          "slotTaken": {
+            "tr": "dolu",
+            "en": "booked",
+            "ar": "محجوز"
+          },
+          "noSlots": {
+            "tr": "Bu tarihte uygun saat kalmadı. Lütfen başka bir gün seçin.",
+            "en": "No times are left on this date. Please choose another day.",
+            "ar": "لا توجد أوقات متاحة في هذا اليوم. يُرجى اختيار يوم آخر."
+          },
+          "t_info": {
+            "tr": "İletişim bilgileriniz",
+            "en": "Your contact details",
+            "ar": "بيانات التواصل"
+          },
+          "fName": {
+            "tr": "Ad soyad",
+            "en": "Full name",
+            "ar": "الاسم الكامل"
+          },
+          "fPhone": {
+            "tr": "Telefon",
+            "en": "Phone",
+            "ar": "رقم الهاتف"
+          },
+          "fEmail": {
+            "tr": "E-posta",
+            "en": "E-mail",
+            "ar": "البريد الإلكتروني"
+          },
+          "fEmailOpt": {
+            "tr": "E-posta (isteğe bağlı)",
+            "en": "E-mail (optional)",
+            "ar": "البريد الإلكتروني (اختياري)"
+          },
+          "fNote": {
+            "tr": "Not (isteğe bağlı)",
+            "en": "Note (optional)",
+            "ar": "ملاحظة (اختياري)"
+          },
+          "eService": {
+            "tr": "Lütfen bir hizmet seçin.",
+            "en": "Please choose a service.",
+            "ar": "يُرجى اختيار خدمة."
+          },
+          "eDate": {
+            "tr": "Lütfen uygun bir tarih seçin.",
+            "en": "Please choose an available date.",
+            "ar": "يُرجى اختيار تاريخ متاح."
+          },
+          "eTime": {
+            "tr": "Lütfen bir saat seçin.",
+            "en": "Please choose a time.",
+            "ar": "يُرجى اختيار وقت."
+          },
+          "eName": {
+            "tr": "Lütfen adınızı ve soyadınızı yazın.",
+            "en": "Please enter your full name.",
+            "ar": "يُرجى كتابة اسمك الكامل."
+          },
+          "ePhone": {
+            "tr": "Geçerli bir telefon numarası yazın.",
+            "en": "Please enter a valid phone number.",
+            "ar": "يُرجى كتابة رقم هاتف صحيح."
+          },
+          "eEmail": {
+            "tr": "Geçerli bir e-posta adresi yazın.",
+            "en": "Please enter a valid e-mail address.",
+            "ar": "يُرجى كتابة بريد إلكتروني صحيح."
+          },
+          "eKvkk": {
+            "tr": "Devam etmek için aydınlatma metnini onaylamanız gerekir.",
+            "en": "You need to accept the privacy notice to continue.",
+            "ar": "يجب الموافقة على إشعار الخصوصية للمتابعة."
+          },
+          "t_confirm": {
+            "tr": "Özet ve onay",
+            "en": "Review and confirm",
+            "ar": "المراجعة والتأكيد"
+          },
+          "sum_service": {
+            "tr": "Hizmet",
+            "en": "Service",
+            "ar": "الخدمة"
+          },
+          "sum_staff": {
+            "tr": "Uzman",
+            "en": "Specialist",
+            "ar": "المختص"
+          },
+          "sum_party": {
+            "tr": "Kişi sayısı",
+            "en": "Guests",
+            "ar": "عدد الضيوف"
+          },
+          "sum_section": {
+            "tr": "Bölüm",
+            "en": "Seating",
+            "ar": "الجلسة"
+          },
+          "sum_date": {
+            "tr": "Tarih",
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "sum_time": {
+            "tr": "Saat",
+            "en": "Time",
+            "ar": "الوقت"
+          },
+          "sum_name": {
+            "tr": "Ad soyad",
+            "en": "Name",
+            "ar": "الاسم"
+          },
+          "sum_phone": {
+            "tr": "Telefon",
+            "en": "Phone",
+            "ar": "الهاتف"
+          },
+          "sum_email": {
+            "tr": "E-posta",
+            "en": "E-mail",
+            "ar": "البريد الإلكتروني"
+          },
+          "sum_note": {
+            "tr": "Not",
+            "en": "Note",
+            "ar": "ملاحظة"
+          },
+          "kvkkLink": {
+            "tr": "Aydınlatma metni",
+            "en": "Privacy notice",
+            "ar": "إشعار الخصوصية"
+          },
+          "submit_whatsapp": {
+            "tr": "WhatsApp ile gönder",
+            "en": "Send via WhatsApp",
+            "ar": "إرسال عبر واتساب"
+          },
+          "submit_mailto": {
+            "tr": "E-posta ile gönder",
+            "en": "Send by e-mail",
+            "ar": "إرسال بالبريد الإلكتروني"
+          },
+          "submit_ics": {
+            "tr": "Takvim dosyasını indir",
+            "en": "Download calendar file",
+            "ar": "تنزيل ملف التقويم"
+          },
+          "showcaseNote": {
+            "tr": "Bu bölüm bir gösterimdir: girdiğiniz bilgiler hiçbir yere gönderilmez. Gerçek talep için bizi arayabilirsiniz.",
+            "en": "This is a showcase: nothing you enter is sent anywhere. To make a real request, please call us.",
+            "ar": "هذا القسم للعرض فقط: لا تُرسَل أي بيانات تدخلها. لتقديم طلب فعلي يُرجى الاتصال بنا."
+          },
+          "callUs": {
+            "tr": "Bizi arayın",
+            "en": "Call us",
+            "ar": "اتصل بنا"
+          },
+          "restart": {
+            "tr": "Başa dön",
+            "en": "Start over",
+            "ar": "العودة إلى البداية"
+          },
+          "doneTitle_randevu": {
+            "tr": "Rezervasyon talebiniz hazır",
+            "en": "Your booking request is ready",
+            "ar": "طلب حجزك جاهز"
+          },
+          "doneTitle_masa": {
+            "tr": "Rezervasyon talebiniz hazır",
+            "en": "Your reservation request is ready",
+            "ar": "طلب حجزك جاهز"
+          },
+          "doneHint_whatsapp": {
+            "tr": "Mesaj WhatsApp'ta hazır olarak açıldı. Talebin bize ulaşması için mesajı göndermeyi unutmayın.",
+            "en": "The message opened in WhatsApp, ready to send. Remember to send it so your request reaches us.",
+            "ar": "فُتحت الرسالة جاهزة في واتساب. لا تنسَ إرسالها كي يصلنا طلبك."
+          },
+          "doneHint_mailto": {
+            "tr": "E-posta uygulamanızda hazır bir taslak açıldı. Göndermeyi unutmayın.",
+            "en": "A draft e-mail opened in your mail app. Remember to send it.",
+            "ar": "فُتحت مسودة رسالة في تطبيق البريد. لا تنسَ إرسالها."
+          },
+          "doneHint_ics": {
+            "tr": "Takvim dosyası indirildi. Kaydı takvim uygulamanıza ekleyebilirsiniz.",
+            "en": "The calendar file was downloaded. You can add the booking to your calendar app.",
+            "ar": "تم تنزيل ملف التقويم. يمكنك إضافة الحجز إلى تطبيق التقويم."
+          },
+          "reopen": {
+            "tr": "Mesajı yeniden aç",
+            "en": "Open the message again",
+            "ar": "فتح الرسالة مرة أخرى"
+          },
+          "reopen_ics": {
+            "tr": "Dosyayı yeniden indir",
+            "en": "Download again",
+            "ar": "إعادة التنزيل"
+          },
+          "addCal": {
+            "tr": "Takvime ekle",
+            "en": "Add to calendar",
+            "ar": "إضافة إلى التقويم"
+          },
+          "newBooking_randevu": {
+            "tr": "Yeni rezervasyon",
+            "en": "New booking",
+            "ar": "حجز جديد"
+          },
+          "newBooking_masa": {
+            "tr": "Yeni rezervasyon",
+            "en": "New reservation",
+            "ar": "حجز جديد"
+          },
+          "demoNote": {
+            "tr": "Demo: bilgileriniz yalnızca bu tarayıcıda saklanır, hiçbir sunucuya gönderilmez.",
+            "en": "Demo: your details stay in this browser only and are never sent to a server.",
+            "ar": "عرض تجريبي: تبقى بياناتك في هذا المتصفح فقط ولا تُرسَل إلى أي خادم."
+          },
+          "myTitle_randevu": {
+            "tr": "Rezervasyonlarım",
+            "en": "My bookings",
+            "ar": "حجوزاتي"
+          },
+          "myTitle_masa": {
+            "tr": "Rezervasyonlarım",
+            "en": "My reservations",
+            "ar": "حجوزاتي"
+          },
+          "cancel": {
+            "tr": "İptal et",
+            "en": "Cancel",
+            "ar": "إلغاء"
+          },
+          "cancelAria": {
+            "tr": "{d} saat {t} kaydını iptal et",
+            "en": "Cancel the booking on {d} at {t}",
+            "ar": "إلغاء الحجز بتاريخ {d} الساعة {t}"
+          },
+          "cancelled": {
+            "tr": "Kayıt iptal edildi.",
+            "en": "Booking cancelled.",
+            "ar": "تم إلغاء الحجز."
+          },
+          "svcFallback_randevu": {
+            "tr": "Çekim",
+            "en": "Shoot",
+            "ar": "جلسة تصوير"
+          },
+          "msg_randevu_head": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için {service} çekimi ayırtmak istiyorum.",
+            "en": "Hello, I would like to book a {service} shoot on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أودّ حجز جلسة {service} يوم {date} الساعة {time} باسم {name}."
+          },
+          "msg_randevu_head_nosvc": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için randevu almak istiyorum.",
+            "en": "Hello, I would like to book an appointment on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز موعد بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_masa_head": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için {party} masa rezervasyonu yapmak istiyorum.",
+            "en": "Hello, I would like to reserve a table for {party} on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز طاولة لـ {party} بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_staff": {
+            "tr": "Tercih edilen uzman: {staff}",
+            "en": "Preferred specialist: {staff}",
+            "ar": "المختص المفضل: {staff}"
+          },
+          "msg_section": {
+            "tr": "Bölüm: {section}",
+            "en": "Seating: {section}",
+            "ar": "الجلسة: {section}"
+          },
+          "msg_phone": {
+            "tr": "Telefon: {phone}",
+            "en": "Phone: {phone}",
+            "ar": "الهاتف: {phone}"
+          },
+          "msg_email": {
+            "tr": "E-posta: {email}",
+            "en": "E-mail: {email}",
+            "ar": "البريد الإلكتروني: {email}"
+          },
+          "msg_note": {
+            "tr": "Not: {note}",
+            "en": "Note: {note}",
+            "ar": "ملاحظة: {note}"
+          },
+          "mailSubject_randevu": {
+            "tr": "Çekim rezervasyon talebi – {name}",
+            "en": "Shoot booking request – {name}",
+            "ar": "طلب حجز جلسة تصوير – {name}"
+          },
+          "mailSubject_masa": {
+            "tr": "Rezervasyon talebi – {name}",
+            "en": "Reservation request – {name}",
+            "ar": "طلب حجز – {name}"
+          },
+          "icsSummary_randevu": {
+            "tr": "Çekim: {service}",
+            "en": "Shoot: {service}",
+            "ar": "جلسة تصوير: {service}"
+          },
+          "icsSummary_masa": {
+            "tr": "Masa rezervasyonu – {party}",
+            "en": "Table reservation – {party}",
+            "ar": "حجز طاولة – {party}"
+          }
+        }
+      },
+      "id": "rmvkxc",
+      "path": "randevu-formu",
+      "local": "body",
+      "data": [],
+      "index": 17
+    }
+  ]
+}
