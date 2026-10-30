@@ -1,0 +1,46 @@
+{
+  "name": {
+    "tr": "İletişim",
+    "en": "Contact",
+    "ar": "اتصل بي"
+  },
+  "status": "play",
+  "category": "",
+  "id": "iletisim",
+  "url": "",
+  "path": "iletisim",
+  "index": 6,
+  "icon": "mail",
+  "desing": {
+    "header": [],
+    "body": [
+      "g3ct01",
+      "g3mp01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Adres, telefon ve görüşme saatleri (kurgusal).",
+    "en": "Address, phone and meeting hours (fictional).",
+    "ar": "العنوان والهاتف وساعات اللقاء (افتراضية)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "İletişim",
+    "en": "Contact",
+    "ar": "اتصل بي"
+  },
+  "keyword": {
+    "tr": "iletişim",
+    "en": "contact",
+    "ar": "اتصل بي"
+  },
+  "update": "2026-10-30T18:58:31.913Z",
+  "date": "2026-10-30"
+}

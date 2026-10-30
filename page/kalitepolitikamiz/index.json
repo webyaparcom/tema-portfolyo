@@ -1,0 +1,41 @@
+{
+  "id": "kalitepolitikamiz",
+  "name": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "description": {
+    "tr": "Kalite politikamız",
+    "en": "Our quality policy",
+    "ar": "سياسة الجودة لدينا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "kalitepolitikamiz",
+  "icon": "verified",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {
+    "tr": "<h2>Kalite Politikamız</h2>\n<p>Doğal ışık, abartısız rötuş, zamanında teslim ve çekilen kişilerin rızasına saygı kalite ilkelerimizdir.</p>",
+    "en": "<h2>Our quality policy</h2>\n<p>Natural light, restrained retouching, on-time delivery and respect for the consent of the people photographed are our quality principles.</p>",
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>الضوء الطبيعي والتحرير غير المبالغ فيه والتسليم في الموعد واحترام موافقة الأشخاص المصوَّرين هي مبادئ الجودة لدينا.</p>"
+  },
+  "title": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "date": "2026-10-30T18:26:58.383Z",
+  "update": "2026-10-30T18:58:31.928Z"
+}

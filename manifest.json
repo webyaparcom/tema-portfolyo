@@ -1,0 +1,29 @@
+{
+  "name": "Deniz Altan",
+  "short_name": "Deniz Altan",
+  "description": "Deniz Altan: Gaziantep merkezli kurgusal fotoğrafçı. Portre, sokak, mimari ve ürün fotoğrafçılığı; çekim paketleri ve çevrimiçi çekim rezervasyonu. (Demo site)",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7A6A4F",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
