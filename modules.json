@@ -46,7 +46,10 @@
         "logo": "logo.png",
         "color": "var(--mx-site-text, #1b1b1b)",
         "height": "72px",
-        "background-color": "var(--mx-site-bg, #ffffff)"
+        "background-color": "var(--mx-site-bg, #ffffff)",
+        "menubg": "",
+        "menutext": "#fff",
+        "menuhoverbg": "rgba(255,255,255,.18)"
       },
       "version": "1.0.0",
       "icon": "menu",
@@ -354,7 +357,8 @@
           "tr": "Fiyatlar kurgusaldır ve KDV dahildir. İhtiyacınıza göre ek süre ya da ek baskı eklenebilir.",
           "en": "Prices are fictional and include VAT. Extra time or additional prints can be added as needed.",
           "ar": "الأسعار افتراضية وتشمل ضريبة القيمة المضافة. يمكن إضافة وقت إضافي أو طبعات إضافية حسب الحاجة."
-        }
+        },
+        "accentText": "#ffffff"
       },
       "version": "1.0.0",
       "icon": "payments",
@@ -489,7 +493,8 @@
           "en": "About me",
           "ar": "نبذة عني"
         },
-        "btn2Url": "hakkimda"
+        "btn2Url": "hakkimda",
+        "stil": ""
       },
       "version": "1.1.0",
       "icon": "campaign",
@@ -507,7 +512,10 @@
         "color": "var(--mx-site-text, #1b1b1b)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "minimal_design": true,
-        "social_media": false
+        "social_media": false,
+        "logo_maxh": "60px",
+        "logo_plate": false,
+        "contact_line": "auto"
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -528,7 +536,8 @@
           "ar": "تواصل معي"
         },
         "margin": "30px 0px 30px 0px",
-        "linkcolor": "var(--mx-site-primary, #2563eb)"
+        "linkcolor": "var(--mx-site-primary, #2563eb)",
+        "stil": ""
       },
       "version": "1.0.0",
       "icon": "contact_mail",
@@ -629,7 +638,8 @@
           "tr": "Hakkımda",
           "en": "About me",
           "ar": "نبذة عني"
-        }
+        },
+        "stil": ""
       },
       "version": "1.1.0",
       "icon": "business",
@@ -1081,7 +1091,8 @@
           "tr": "12|Yıllık deneyim|240|Tamamlanan çekim|9|Sergi",
           "en": "12|Years of experience|240|Shoots completed|9|Exhibitions",
           "ar": "12|سنة من الخبرة|240|جلسة منجزة|9|معارض"
-        }
+        },
+        "stil": ""
       },
       "category": "hero",
       "description": "Gradient hero: istatistikler, CTA, görsel alanı. Metinler cok dilli (tr/en); renkler --gradient--, --btn_primary_bg-- ile markaya uyumlanır. Buton URL pathnext (urunler, iletisim).",
@@ -1118,7 +1129,9 @@
           "ar": "ستة مجالات رئيسية من البورتريه إلى العمارة."
         },
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff"
       },
       "data": [
         {
@@ -1234,7 +1247,9 @@
           "ar": "ستة أنواع من الجلسات تُخطَّط حسب احتياجك؛ وتبدأ كلٌّ منها بلقاء تمهيدي مجاني."
         },
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff"
       },
       "data": [
         {
@@ -1350,7 +1365,9 @@
           "ar": "مسار من أربع خطوات دون مفاجآت."
         },
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff"
       },
       "data": [
         {
@@ -1441,7 +1458,8 @@
           "en": "Fictional demo reviews.",
           "ar": "تقييمات تجريبية افتراضية."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "#ffffff"
       },
       "data": [
         {
@@ -1524,7 +1542,8 @@
           "en": "The most common questions before a session.",
           "ar": "أكثر الأسئلة تكرارًا قبل الجلسة."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)"
       },
       "data": [
         {
