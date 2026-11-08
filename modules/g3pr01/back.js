@@ -12,6 +12,21 @@ function pricingLang(val, lang) {
   return String(val);
 }
 
+/* G3 bulgusu (30 Eki 2026): "/slug" ile baslayan IC baglanti dil onekiyle cozulur ("/tr/slug/");
+   dis baglanti, "#", "//" ve zaten "/tr/..." ile baslayan yollar aynen kalir. "#kesit" ve "?sorgu" korunur. */
+function pricingHref(url) {
+  var u = url == null ? "" : String(url).trim();
+  if (!/^\/(?!\/)/.test(u) || /^\/(tr|en|ar|de|fr|ru|es|it|nl)(\/|$|[?#])/.test(u)) {
+    return u || "#";
+  }
+  var tail = "";
+  var cut = u.search(/[?#]/);
+  if (cut > -1) {
+    tail = u.slice(cut);
+    u = u.slice(0, cut);
+  }
+  return wxLangInternalHref(u.replace(/^\/+/, "").replace(/\/+$/, "")) + tail;
+}
 var backhtml = "";
 if (json.data && json.data.length) {
   for (var pi = 0; pi < json.data.length; pi++) {
@@ -24,7 +39,7 @@ if (json.data && json.data.length) {
     var period = pricingLang(item.period, json.lang);
     var note = pricingLang(item.note, json.lang);
     var ctaText = pricingLang(item.ctaText, json.lang);
-    var ctaUrl = item.ctaUrl || "#";
+    var ctaUrl = pricingHref(item.ctaUrl);
     var flag = pricingLang(item.flag, json.lang);
     var featured = item.featured === true;
 
