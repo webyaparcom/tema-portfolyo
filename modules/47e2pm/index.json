@@ -1,76 +1,56 @@
 {
-  "name": "Müşteri Yorumları 1",
+  "name": "Yorum Çevir Kart — önde kişi, arkada yorum",
+  "description": "Kartın ön yüzü avatar, ad, unvan ve puan; dokununca / Enter ile (farede üzerine gelince) dönüp arka yüzde vurgu zeminde yorumu gösterir. Merak etkileşimi: kimlik ızgarası gibi başlar, yorum keşfedilerek okunur (3B çevirme) — sabit alıntı kartı değil. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "flip",
+  "category": "testimonial",
+  "subCategory": "flip",
+  "tags": [
+    "testimonial",
+    "flip",
+    "cards",
+    "interactive",
+    "3d",
+    "rtl",
+    "fabrika"
+  ],
   "desing": {
     "max": "1200px",
-    "bgcolor": "#f8fafc",
-    "cardbg": "#ffffff",
-    "bordercolor": "#e2e8f0",
-    "titlecolor": "#1e293b",
-    "textcolor": "#475569",
-    "accent": "#DE6D26",
-    "starcolor": "#f59e0b",
-    "badge": {
-      "tr": "Yorumlar",
-      "en": "Testimonials"
-    },
-    "title": {
-      "tr": "Müşterilerimiz Ne Diyor?",
-      "en": "What Our Customers Say"
-    },
-    "description": {
-      "tr": "Birlikte çalıştığımız müşterilerimizin deneyimleri.",
-      "en": "Experiences from the customers we work with."
-    },
-    "accentText": "#ffffff"
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-surface, #f6f7f9)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+    "kartBg": "var(--mx-site-bg, #ffffff)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "yildiz": "color-mix(in srgb, var(--mx-color-warning, #d97706) 78%, var(--mx-site-text, #111318))",
+    "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+    "color": "var(--mx-site-text, #111318)"
   },
-  "data": [
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Firma Sahibi",
-        "en": "Business Owner"
-      },
-      "text": {
-        "tr": "Süreç boyunca hızlı ve profesyonel bir hizmet aldık. Kesinlikle tavsiye ederiz.",
-        "en": "We received fast and professional service throughout the process. Highly recommended."
-      },
-      "rating": 5,
-      "img": ""
-    },
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Pazarlama Müdürü",
-        "en": "Marketing Manager"
-      },
-      "text": {
-        "tr": "Beklentilerimizin üzerinde bir sonuç aldık; iletişim her zaman açıktı.",
-        "en": "The result exceeded our expectations; communication was always clear."
-      },
-      "rating": 5,
-      "img": ""
-    },
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Kurucu",
-        "en": "Founder"
-      },
-      "text": {
-        "tr": "Projemiz zamanında teslim edildi ve destek süreci çok başarılıydı.",
-        "en": "Our project was delivered on time and the support process was excellent."
-      },
-      "rating": 4,
-      "img": ""
-    }
-  ],
-  "category": "testimonial",
-  "description": "Manuel müşteri yorumu kartları modülü. İsim, unvan, yıldız puanı ve yorum metnini responsive grid'de gösterir; fotoğraf yoksa baş harf avatarı kullanılır. Google'a bağımlı olmayan referans/yorum vitrini için kullanılır (otomatik çekim için google-yorumlar modülü).",
-  "version": "1.0.0",
-  "icon": "format_quote",
+  "data": [],
   "veri": {
     "statik": true,
     "dinamik": false,
-    "kaynak": "desing/data"
+    "kaynak": "data",
+    "alanlar": {
+      "metin": "yorum metni — dil sözlüğü (zorunlu)",
+      "ad": "yorumu yapanın adı",
+      "unvan": "görev / unvan (dil sözlüğü)",
+      "firma": "firma adı",
+      "puan": "1–5 yıldız (0/boş → yıldız yok)",
+      "img": "avatar / portre görseli",
+      "logo": "firma logosu (destekleyen yerleşimde)",
+      "baslik": "yorum başlığı (destekleyen yerleşimde)",
+      "tarih": "tarih metni",
+      "kaynak": "kaynak (Google, Instagram …)"
+    }
   }
 }

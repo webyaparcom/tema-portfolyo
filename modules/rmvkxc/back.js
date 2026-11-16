@@ -1,146 +1,113 @@
-/* randevu-formu back.js — sunucu tarafı (render anında).
-   Yapılan iş: desing'deki dizi/nesne verisini (hizmet, uzman, bölüm, çalışma saatleri, kapalı günler, ui sözlüğü)
-   render diline çözüp sayfaya <script type="application/json"> olarak basar; istemci betiği oradan okur.
-   Metinlerin tamamı index.json desing'dedir (W1) — burada sabit görünür metin yoktur.
-   html içinde: {{veri}} → JSON, {{ui:anahtar}} → ui sözlüğünden düz metin (öznitelik için kaçışlı). */
-try {
-  var rfD = json.desing || {};
-  var rfL = json.lang || "tr";
-  var rfEsc = function (s) {
-    return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  };
-  var rfPick = function (v) { return wmPickLang(v, rfL); };
-  var rfNum = function (v, vars, min, max) {
-    var n = Number(v);
-    if (!isFinite(n)) { n = vars; }
-    if (n < min) { n = min; }
-    if (n > max) { n = max; }
-    return n;
-  };
-  var rfIso = function (s) { return /^\d{4}-\d{2}-\d{2}$/.test(String(s)) ? String(s) : ""; };
-  var rfHm = function (s, vars) { return /^\d{1,2}:\d{2}$/.test(String(s)) ? String(s) : vars; };
+/* randevu-formu-3 — Bilgi Panelli Randevu Talebi (1 Kas 2026, T1-B varyant).
+   Yer tutucular: rf3head rf3tablo rf3dilimler rf3kvkk rf3btn rf3ikon rf3kapali rf3disabled rf3veri. Gün adları Intl.DateTimeFormat(L) ile. Gönderim randevu-formu ile aynı sunucusuz yol (wa.me / mailto).
+   Ortak yardımcılar: esc t guvenliHref gorselYol evet sayi metinleriYaz (desing metinleri kaçışlı). */
+var D = json.desing || {};
+var L = json.lang || "tr";
 
-  /* ui sözlüğü: {tr,en,ar} → düz metin; çoğul tablosu ({tr:{one,other},ar:{zero,...}}) nesne olarak kalır */
-  var rfUi = {};
-  var rfSrc = rfD.ui || {};
-  for (var rfK in rfSrc) {
-    if (!Object.prototype.hasOwnProperty.call(rfSrc, rfK)) { continue; }
-    var rfV = rfSrc[rfK];
-    if (rfV && typeof rfV === "object" && ((rfV[rfL] && typeof rfV[rfL] === "object") || (!rfV[rfL] && rfV.tr && typeof rfV.tr === "object"))) {
-      rfUi[rfK] = rfV[rfL] && typeof rfV[rfL] === "object" ? rfV[rfL] : rfV.tr;
-    } else {
-      rfUi[rfK] = rfPick(rfV);
-    }
-  }
-
-  var rfMode = ["randevu", "masa", "gosterim"].indexOf(rfD.mode) !== -1 ? rfD.mode : "randevu";
-  var rfSubmit = ["whatsapp", "mailto", "ics"].indexOf(rfD.submit) !== -1 ? rfD.submit : "whatsapp";
-  var rfCur = rfD.currency || "₺";
-  var rfFmt = new Intl.NumberFormat("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 });
-
-  var rfServices = [];
-  var rfSvcSrc = Array.isArray(rfD.services) ? rfD.services : [];
-  for (var rfi = 0; rfi < rfSvcSrc.length; rfi++) {
-    var rfS = rfSvcSrc[rfi] || {};
-    if (!rfS.id) { continue; }
-    var rfPrice = rfS.price === undefined || rfS.price === null || rfS.price === "" ? null : Number(rfS.price);
-    rfServices.push({
-      id: String(rfS.id),
-      name: rfPick(rfS.name),
-      duration: rfNum(rfS.duration, 30, 5, 600),
-      price: rfPrice !== null && isFinite(rfPrice) ? rfPrice : null,
-      priceText: rfPrice !== null && isFinite(rfPrice) ? rfFmt.format(rfPrice) + " " + (rfS.currency || rfCur) : ""
-    });
-  }
-
-  var rfStaff = [];
-  var rfStaffSrc = Array.isArray(rfD.staff) ? rfD.staff : [];
-  for (var rfj = 0; rfj < rfStaffSrc.length; rfj++) {
-    var rfP = rfStaffSrc[rfj] || {};
-    if (!rfP.id) { continue; }
-    rfStaff.push({
-      id: String(rfP.id),
-      name: rfPick(rfP.name),
-      role: rfPick(rfP.role),
-      services: Array.isArray(rfP.services) ? rfP.services.map(String) : []
-    });
-  }
-
-  var rfSections = [];
-  var rfSecSrc = Array.isArray(rfD.sections) ? rfD.sections : [];
-  for (var rfm = 0; rfm < rfSecSrc.length; rfm++) {
-    var rfC = rfSecSrc[rfm] || {};
-    if (rfC.id) { rfSections.push({ id: String(rfC.id), name: rfPick(rfC.name) }); }
-  }
-
-  var rfH = rfD.hours || {};
-  var rfDays = [];
-  var rfDaysSrc = Array.isArray(rfH.days) && rfH.days.length ? rfH.days : [1, 2, 3, 4, 5];
-  for (var rfd = 0; rfd < rfDaysSrc.length; rfd++) {
-    var rfDn = Number(rfDaysSrc[rfd]);
-    if (rfDn >= 1 && rfDn <= 7 && rfDays.indexOf(rfDn) === -1) { rfDays.push(rfDn); }
-  }
-  var rfBreaks = [];
-  var rfBrSrc = Array.isArray(rfH.breaks) ? rfH.breaks : [];
-  for (var rfb = 0; rfb < rfBrSrc.length; rfb++) {
-    if (rfBrSrc[rfb] && rfBrSrc[rfb].start && rfBrSrc[rfb].end) {
-      rfBreaks.push({ start: rfHm(rfBrSrc[rfb].start, "12:00"), end: rfHm(rfBrSrc[rfb].end, "13:00") });
-    }
-  }
-  var rfHours = {
-    days: rfDays,
-    start: rfHm(rfH.start, "09:00"),
-    end: rfHm(rfH.end, "18:00"),
-    slot: rfNum(rfH.slot, 30, 5, 240),
-    breaks: rfBreaks
-  };
-
-  var rfClosed = [];
-  var rfClSrc = Array.isArray(rfD.closed) ? rfD.closed : [];
-  for (var rfc = 0; rfc < rfClSrc.length; rfc++) {
-    if (rfIso(rfClSrc[rfc])) { rfClosed.push(rfIso(rfClSrc[rfc])); }
-  }
-
-  var rfWeek = ["mon", "sat", "sun"].indexOf(rfD.weekStart) !== -1 ? rfD.weekStart : (rfL === "ar" ? "sat" : "mon");
-
-  /* KVKK aydınlatma bağlantısı: iç sayfa adı → dil önekli yol; mutlak adres aynen */
-  var rfKv = rfD.kvkk || {};
-  var rfKvHref = "";
-  if (rfKv.href) {
-    rfKvHref = typeof wxLangInternalHref === "function" ? wxLangInternalHref(String(rfKv.href)) : String(rfKv.href);
-  }
-  if (/^\s*(javascript|data|vbscript):/i.test(String(rfKv.href || "")) || /^\s*(javascript|data|vbscript):/i.test(rfKvHref)) { rfKvHref = ""; }
-
-  var rfPayload = {
-    dil: rfL,
-    mode: rfMode,
-    submit: rfSubmit,
-    demo: rfD.demo !== false,
-    weekStart: rfWeek,
-    leadDays: rfNum(rfD.leadDays, 1, 0, 365),
-    maxDays: rfNum(rfD.maxDays, 60, 1, 730),
-    maxPartySize: rfNum(rfD.maxPartySize, 8, 1, 100),
-    masaDuration: rfNum(rfD.masaDuration, 90, 15, 480),
-    requireEmail: rfD.requireEmail === true,
-    phone: String(rfD.phone || ""),
-    email: String(rfD.email || ""),
-    location: rfPick(rfD.location),
-    services: rfServices,
-    staff: rfStaff,
-    sections: rfSections,
-    hours: rfHours,
-    closed: rfClosed,
-    kvkk: { text: rfPick(rfKv.text), href: rfKvHref },
-    successText: rfPick(rfD.successText),
-    ui: rfUi
-  };
-  var rfJson = JSON.stringify(rfPayload).replace(/</g, "\\u003c").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
-
-  html = html.replace(/\{\{veri\}\}/g, function () { return rfJson; });
-  html = html.replace(/\{\{ui:([A-Za-z0-9_]+)\}\}/g, function (m, key) {
-    var v = rfUi[key];
-    return typeof v === "string" ? rfEsc(v) : "";
-  });
-} catch (rfHata) {
-  html = html.replace(/\{\{veri\}\}/g, function () { return "{}"; }).replace(/\{\{ui:[A-Za-z0-9_]+\}\}/g, function () { return ""; });
+/* HTML kaçışı — html'e giden her değer bundan geçer */
+function esc(s) {
+  return String(s == null ? "" : s)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
+/* Dil seçimi: aktif dil → tr → en → ilk anahtar (motorun wmPickLang'i) */
+function t(v) { return wmPickLang(v, L); }
+/* Bağlantı: dış/mailto/tel/# aynen; iç sayfa adı → dil önekli yol; javascript: vb. reddedilir */
+function guvenliHref(v) {
+  var s = String(v == null ? "" : v).trim();
+  if (!s) { return ""; }
+  if (/^\s*(javascript|vbscript|file|data):/i.test(s)) { return ""; }
+  if (/^(https?:)?\/\//i.test(s) || /^(mailto:|tel:|#)/i.test(s) || s.charAt(0) === "/") { return s; }
+  return wxLangInternalHref(s);
+}
+/* Görsel yolu: "/" ve http(s) aynen; yalın ad → /img/<ad>; tehlikeli şema → "" */
+function gorselYol(v) {
+  var s = String(v == null ? "" : v).trim();
+  if (!s) { return ""; }
+  if (/^\s*(javascript|vbscript|file|data):/i.test(s)) { return ""; }
+  if (s.charAt(0) === "/" || /^https?:\/\//i.test(s)) { return s; }
+  return "/img/" + s;
+}
+function evet(v, d) {
+  if (v === undefined || v === null || v === "") { return d; }
+  return !(v === false || v === "false" || v === 0 || v === "0");
+}
+function sayi(v, d, mn, mx) {
+  var n = parseInt(v, 10);
+  if (!isFinite(n)) { n = d; }
+  return Math.min(mx, Math.max(mn, n));
+}
+/* desing'deki düz metin / {tr,en,ar} değerlerini {{anahtar}} yerine KAÇIŞLI yazar.
+   Motor aynı yer tutucuyu ham yazardı; back.js önce davrandığı için kaçışsız değer html'e ulaşmaz. */
+function metinleriYaz() {
+  var k;
+  for (k in D) {
+    if (!Object.prototype.hasOwnProperty.call(D, k)) { continue; }
+    var v = D[k];
+    if (v == null) { continue; }
+    var dilli = typeof v === "object" && !Array.isArray(v) && (typeof v.tr === "string" || typeof v.en === "string");
+    if (typeof v === "object" && !dilli) { continue; }
+    var deger = esc(t(v));
+    var desen = new RegExp("\\{\\{" + String(k).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\}\\}", "g");
+    html = html.replace(desen, function () { return deger; });
+  }
+}
+
+var rf3Set = (webmakerdata && webmakerdata.setting) || {};
+var rf3Submit = D.submit === "mailto" ? "mailto" : "whatsapp";
+var rf3Phone = String(D.phone || "").trim() || (typeof rf3Set.phone === "string" ? rf3Set.phone.trim() : "");
+var rf3Email = String(D.email || "").trim() || (typeof rf3Set.email === "string" ? rf3Set.email.trim() : "");
+var rf3Hedef = rf3Submit === "mailto" ? rf3Email : rf3Phone;
+var rf3H = D.hours || {};
+function rf3Hm(s, d) { return /^\d{1,2}:\d{2}$/.test(String(s || "")) ? String(s) : d; }
+var rf3Bas = rf3Hm(rf3H.start, "09:00");
+var rf3Son = rf3Hm(rf3H.end, "18:00");
+var rf3Gunler = [];
+var rf3Gs = Array.isArray(rf3H.days) && rf3H.days.length ? rf3H.days : [1, 2, 3, 4, 5];
+var rf3i;
+for (rf3i = 0; rf3i < rf3Gs.length; rf3i++) { var g = Number(rf3Gs[rf3i]); if (g >= 1 && g <= 7) { rf3Gunler.push(g); } }
+
+/* Gün adları: 1 Ocak 2024 Pazartesi → 1..7 (Intl yoksa sayı) */
+function rf3GunAdi(n) {
+  try { return new Intl.DateTimeFormat(L, { weekday: "long", timeZone: "UTC" }).format(new Date(Date.UTC(2024, 0, n))); } catch (e) { return String(n); }
+}
+var rf3Tablo = "";
+for (rf3i = 1; rf3i <= 7; rf3i++) {
+  var acik = rf3Gunler.indexOf(rf3i) !== -1;
+  rf3Tablo += '<tr' + (acik ? "" : ' class="modulex-rf3-kapaligun"') + '><th scope="row">' + esc(rf3GunAdi(rf3i)) + "</th><td" + (acik ? ' dir="ltr"' : "") + ">" +
+    (acik ? esc(rf3Bas + " – " + rf3Son) : esc(t(D.closedLabel))) + "</td></tr>";
+}
+
+var rf3Parts = Array.isArray(D.dayparts) ? D.dayparts : [];
+var rf3PartHtml = "";
+var rf3Ikon = ["wb_twilight", "light_mode", "nights_stay"];
+for (rf3i = 0; rf3i < rf3Parts.length; rf3i++) {
+  var p = rf3Parts[rf3i] || {};
+  var ad = t(p.name);
+  if (!ad) { continue; }
+  rf3PartHtml += '<label class="modulex-rf3-dilim"><input type="radio" name="dilim" value="' + esc(ad) + '" />' +
+    '<span class="modulex-rf3-dkart"><span class="material-symbols-outlined" aria-hidden="true">' + (rf3Ikon[rf3i] || "schedule") + "</span>" + esc(ad) + "</span></label>";
+}
+
+var rf3KvUrl = guvenliHref(D.kvkkUrl);
+var rf3Kvkk = esc(t(D.kvkkText)) + (rf3KvUrl ? ' <a href="' + esc(rf3KvUrl) + '" target="_blank" rel="noopener">' + esc(t(D.kvkkLink)) + "</a>" : "");
+
+var rf3Veri = JSON.stringify({
+  submit: rf3Submit, hedef: rf3Hedef,
+  lead: sayi(D.leadDays, 1, 0, 365), max: sayi(D.maxDays, 60, 1, 730), gunler: rf3Gunler,
+  sablon: t(D.msgTemplate), konu: t(D.subject),
+  m: { zorunlu: t(D.required), tel: t(D.phoneInvalid), kapali: t(D.dayClosed), tamam: t(D.successText) }
+}).replace(/</g, "\\u003c");
+
+html = html.replace(/\{\{rf3head\}\}/g, function () {
+  return (t(D.title) ? '<h2 class="modulex-rf3-title">' + esc(t(D.title)) + "</h2>" : "") + (t(D.description) ? '<p class="modulex-rf3-desc">' + esc(t(D.description)) + "</p>" : "");
+});
+html = html.replace(/\{\{rf3tablo\}\}/g, function () { return rf3Tablo; });
+html = html.replace(/\{\{rf3dilimler\}\}/g, function () { return rf3PartHtml; });
+html = html.replace(/\{\{rf3kvkk\}\}/g, function () { return rf3Kvkk; });
+html = html.replace(/\{\{rf3btn\}\}/g, function () { return esc(t(rf3Submit === "mailto" ? D.submitMailto : D.submitWhatsapp)); });
+html = html.replace(/\{\{rf3ikon\}\}/g, function () { return rf3Submit === "mailto" ? "mail" : "chat"; });
+html = html.replace(/\{\{rf3kapali\}\}/g, function () { return rf3Hedef ? "" : '<p class="modulex-rf3-kapali" role="status">' + esc(t(D.closedText)) + "</p>"; });
+html = html.replace(/\{\{rf3disabled\}\}/g, function () { return rf3Hedef ? "" : " disabled"; });
+html = html.replace(/\{\{rf3veri\}\}/g, function () { return rf3Veri; });
+metinleriYaz();
