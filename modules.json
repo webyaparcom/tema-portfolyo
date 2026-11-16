@@ -36,46 +36,78 @@
           "tr": "Üye Girişi",
           "en": "Login",
           "ar": "تسجيل الدخول"
-        }
+        },
+        "hataBildir": "https://webyapar.com/api/portal/tema-hata.js"
       },
       "version": "1.0.0",
       "icon": "info",
       "index": 0
     },
     {
-      "name": "Menü 4",
-      "path": "menu-4",
+      "name": "Üst Diyagonal — eğik kesimli renkli düğme kanadı",
+      "path": "ust-diyagonal",
       "local": "header",
       "category": "menu",
       "id": "g3mn01",
       "desing": {
+        "color": "var(--mx-site-text, #111318)",
         "logo": "logo.png",
-        "color": "var(--mx-site-text, #1b1b1b)",
         "height": "72px",
         "background-color": "var(--mx-site-bg, #ffffff)",
         "menubg": "",
         "menutext": "#fff",
-        "menuhoverbg": "rgba(255,255,255,.18)"
+        "menuhoverbg": "rgba(255,255,255,.18)",
+        "max": "100%",
+        "bosluk": "0px",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "tel": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "logoH": "44px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)"
       },
       "version": "1.0.0",
-      "icon": "menu",
-      "index": 1
+      "icon": "change_history",
+      "index": 1,
+      "description": "Kenardan kenara çubuk: başta logo, ortada menü; sonda eğik kesilmiş marka renkli bir kanat içinde dil ve düğme. Dar ekranda kanatta menü düğmesi kalır. RTL'de kanat aynalanır. Hareket hissi veren çapraz kesim: eylem alanı (düğme) renkli bir blokla menüden ayrılır. Sayfalar site sayfalarından, dil seçici {{langbar}}, logo {{logo}}. Mobil menü erişilebilir (aria-expanded, Esc, odak). Renkler desing + var(--mx-site-*); mantıksal CSS → RTL.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "name": "ek bağlantı adı (dil sözlüğü)",
+          "url": "iç yol ya da dış adres (dış adres yeni sekmede)"
+        }
+      }
     },
     {
-      "name": "Galeri Masonry (Filtre + Lightbox)",
-      "path": "galeri-masonry",
+      "name": "Galeri Yatay Akordeon — genişleyen dikey şeritler",
+      "path": "galeri-yatay-akordeon",
       "local": "body",
       "category": "galeri",
       "id": "g3gm01",
       "desing": {
         "max": "1280px",
         "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "textcolor": "var(--mx-site-text, #1b1b1b)",
         "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
         "surface": "var(--mx-site-surface, #ffffff)",
         "surface2": "var(--mx-site-surface-2, #ececea)",
-        "accent": "var(--mx-site-primary, #2563eb)",
-        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "gap": "0px",
         "radius": "8px",
@@ -199,10 +231,25 @@
               "ar": "العمارة والأشياء"
             }
           }
-        ]
+        ],
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "tumu": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "version": "1.0.0",
-      "icon": "photo_library",
+      "icon": "view_week",
       "data": [
         {
           "img": "portfolyo-galeri-10.webp",
@@ -333,7 +380,24 @@
           }
         }
       ],
-      "index": 2
+      "index": 2,
+      "description": "Görseller yan yana dar dikey şeritler, adları dikey yazılı; üzerine gelince ya da odaklanınca şerit genişler, ad + açıklama alta yatay çıkar. En çok 8 görsel; mobilde dikey akordeon. Tüm görseller aynı anda görünür ama biri öne çıkar (flex genişleme); ızgara/ray değil, etkileşimli panorama. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "img": "görsel yolu (boşsa yer tutucu)",
+          "baslik": "dil sözlüğü (resim adı)",
+          "alt": "dil sözlüğü (boşsa başlık)",
+          "metin": "dil sözlüğü (kısa açıklama)",
+          "kat": "kategori kimliği (desing.cats id'si)",
+          "url": "iç/dış bağlantı",
+          "w": "görsel genişliği (px, oran için)",
+          "h": "görsel yüksekliği (px)",
+          "kucuk": "küçük görsel (varsa ızgarada bu)"
+        }
+      }
     },
     {
       "name": "Fiyatlandırma 1",
@@ -468,13 +532,25 @@
       "index": 3
     },
     {
-      "name": "CTA Şerit 1",
-      "path": "cta-1",
+      "name": "Çağrı Tam Kart — tamamı tıklanan büyük kart",
+      "path": "cagri-tam-kart",
       "local": "body",
       "category": "cta",
       "id": "g3ca01",
       "desing": {
         "max": "1200px",
+        "btn1Text": {
+          "tr": "Çekim ayırt",
+          "en": "Book a shoot",
+          "ar": "احجز جلسة"
+        },
+        "btn1Url": "cekim-rezervasyon",
+        "btn2Text": {
+          "tr": "Hakkımda",
+          "en": "About me",
+          "ar": "نبذة عني"
+        },
+        "btn2Url": "hakkimda",
         "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
         "btnbg": "var(--mx-site-surface, #ffffff)",
         "btncolor": "var(--mx-site-text, #1b1b1b)",
@@ -488,34 +564,62 @@
           "en": "Ask about availability for your shoot date; the booking form on this site is a demo.",
           "ar": "اسأل عن التوفر لموعد جلستك؛ نموذج الحجز في هذا الموقع تجريبي."
         },
-        "btn1Text": {
-          "tr": "Çekim ayırt",
-          "en": "Book a shoot",
-          "ar": "احجز جلسة"
-        },
-        "btn1Url": "cekim-rezervasyon",
-        "btn2Text": {
-          "tr": "Hakkımda",
-          "en": "About me",
-          "ar": "نبذة عني"
-        },
-        "btn2Url": "hakkimda",
-        "stil": ""
+        "stil": "",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img": "",
+        "alt": "",
+        "ikon": "",
+        "not": "",
+        "number": "",
+        "numberText": "",
+        "waLabel": "",
+        "waTitle": "",
+        "waMessage": "",
+        "hours": "",
+        "hoursLabel": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)",
+        "yaziRenk": "var(--mx-site-text, #111318)"
       },
       "version": "1.1.0",
-      "icon": "campaign",
-      "index": 4
+      "icon": "touch_app",
+      "index": 4,
+      "description": "Kartın tamamı birincil bağlantıdır (başlık bağlantısı kartı kaplar); bitişte dev ok hover'da kayar ve dolar. İkincil düğme ayrı küçük bağlantı. Tıklama hedefi tüm kart — mobilde parmak dostu; düğme aramaya gerek yok. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık da düğme de yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "ikon": "Material Symbols adı (madde)",
+          "baslik": "dil sözlüğü (madde yazısı, zorunlu)",
+          "aciklama": "dil sözlüğü (madde alt yazısı)"
+        }
+      }
     },
     {
-      "name": "Footer 3",
-      "path": "footer-3",
+      "name": "Alt Yasal Kat — üst sütunlar + yoğun kurumsal yasal kuşak",
+      "path": "alt-yasal-kat",
       "local": "footer",
       "category": "footer",
       "id": "g3ft01",
       "desing": {
+        "bgcolor": "var(--mx-site-text, #111318)",
+        "color": "var(--mx-site-bg, #ffffff)",
         "showlang": true,
-        "bgcolor": "var(--mx-site-surface-2, #f1f1ee)",
-        "color": "var(--mx-site-text, #1b1b1b)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "minimal_design": true,
         "social_media": false,
@@ -526,21 +630,63 @@
         "duzen": "",
         "slogan": "",
         "ikinciSutun": "",
-        "iletisimNot": ""
+        "iletisimNot": "",
+        "max": "1200px",
+        "bosluk": "0px",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "hakkinda": "",
+        "tel": "",
+        "eposta": "",
+        "adres": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "rightsText": "",
+        "bg": "var(--mx-site-text, #111318)",
+        "text": "var(--mx-site-bg, #ffffff)",
+        "muted": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 78%, var(--mx-site-text, #111318))",
+        "kartBg": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 7%, transparent)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 18%, transparent)",
+        "accent": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 45%, var(--mx-site-bg, #ffffff))",
+        "accentText": "var(--mx-site-text, #111318)",
+        "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+        "vurguText": "var(--mx-site-text, #111318)",
+        "logoH": "48px"
       },
       "version": "1.0.0",
       "icon": "widgets",
       "data": [],
-      "index": 5
+      "index": 5,
+      "description": "İki kat: üst katta marka + sayfalar + bağlantılar + iletişim sütunları; alt katta ayrı tonlu yoğun kuşak — yasal bağlantılar (gizlilik, KVKK, çerez), telif, dil ve başa dön. Kurumsal ve düzenlemeye tabi siteler için yasal bilgi ikinci bir kata ayrılır, sayfanın en altında okunaklı ve sıkı durur. Sayfalar site sayfalarından, iletişim desing → site ayarı, sosyal wmSocialBar, dil seçici {{langbar}}. Metinler dil sözlüğü / lang.json; renkler desing + var(--mx-site-*); mantıksal CSS → RTL.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "hakkinda": "kısa tanıtım (dil sözlüğü; yoksa setting.description)",
+          "tel": "telefon (yoksa setting.phone)",
+          "eposta": "e-posta (yoksa setting.email)",
+          "adres": "adres (dil sözlüğü; yoksa setting.address)",
+          "services": "bağlantı listesi [{ name, href }] (footer-10)",
+          "hours": "çalışma saatleri [{ days, time }]",
+          "legal": "yasal bağlantılar [{ text, href }]",
+          "social": "sosyal hesaplar [{ ad, url }] (yoksa site ayarı)",
+          "rightsText": "telif satırı (yoksa @all-rights@)",
+          "nlTitle": "bülten başlığı (bülten formu yalnız başlık/metin + alıcı e-posta varken)"
+        }
+      }
     },
     {
-      "name": "İletişim",
-      "path": "contact-3",
+      "name": "İletişim Çizgi İkon — kontur karolar, üzerine gelince dolar",
+      "path": "iletisim-cizgi-ikon",
       "local": "body",
       "category": "contact",
       "id": "g3ct01",
       "desing": {
-        "color": "var(--mx-site-text, #1b1b1b)",
+        "color": "var(--mx-site-text, #111318)",
         "name": {
           "tr": "Bana ulaşın",
           "en": "Get in touch",
@@ -548,10 +694,35 @@
         },
         "margin": "30px 0px 30px 0px",
         "linkcolor": "var(--mx-site-primary, #2563eb)",
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "adres": "",
+        "telefon": "",
+        "eposta": "",
+        "whatsapp": "",
+        "saat": "",
+        "haritaUrl": "",
+        "haritaGomme": "",
+        "waMesaj": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-bg, #ffffff)"
       },
       "version": "1.0.0",
-      "icon": "contact_mail",
+      "icon": "check_box_outline_blank",
       "data": [
         {
           "icon": "phone",
@@ -580,7 +751,19 @@
           "url": ""
         }
       ],
-      "index": 6
+      "index": 6,
+      "description": "Kare kontur karolar: büyük çizgi ikon, etiket ve değer; üzerine gelince karo alttan marka rengiyle dolar, yazı zıt renge döner. Dolgu animasyonlu karo ızgarası: teknik/endüstriyel temalarda net, grafik bir iletişim ızgarası. Kanallar desing'den (adres · telefon · WhatsApp · e-posta · saat) + data satırları; etiketler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Kanal yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "ikon": "Material Symbols adı (kanal türü ikondan da anlaşılır: mail · call · location_on · schedule)",
+          "deger": "dil sözlüğü (görünen değer, zorunlu; eski `text`)",
+          "url": "bağlantı (boşsa e-posta/telefon/haritadan türetilir)",
+          "baslik": "dil sözlüğü (kanal etiketi)"
+        }
+      }
     },
     {
       "name": "Maps",
@@ -602,12 +785,14 @@
       "index": 7
     },
     {
-      "name": "Tanıtım Modülü",
-      "path": "module-1",
+      "name": "Tanıtım Çizgi Izgara — saç teli çerçeveli dört hücre",
+      "path": "tanitim-cizgi-izgara",
       "local": "body",
       "category": "module",
       "id": "g3in01",
       "desing": {
+        "img": "portfolyo-hero-portre.webp",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
         "name": {
           "tr": "Hakkımda",
           "en": "About me",
@@ -640,8 +825,6 @@
           "ar": "أتحدث أولًا ثم أخطّط ثم أصوّر؛ وأسلّم في نهاية كل جلسة معرضًا إلكترونيًا."
         },
         "icon3": "photo_camera",
-        "img": "portfolyo-hero-portre.webp",
-        "bgcolor": "var(--mx-site-surface, #ffffff)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
         "marginbotton": "20",
@@ -650,27 +833,61 @@
           "en": "About me",
           "ar": "نبذة عني"
         },
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img2": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "version": "1.1.0",
-      "icon": "business",
-      "index": 8
+      "icon": "grid_on",
+      "index": 8,
+      "description": "İnce çizgilerle bölünmüş 2×2 editoryal ızgara: başlık hücresi, metin hücresi, görsel hücresi, maddeler + CTA hücresi. Mimari/editoryal ızgara: her içerik parçası saç teli çizgili kendi hücresinde; boşluk ve hiza ile kurulan sade düzen. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık ve metin yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
-      "name": "Galeri Masonry (Filtre + Lightbox)",
-      "path": "galeri-masonry",
+      "name": "Galeri Yatay Akordeon — genişleyen dikey şeritler",
+      "path": "galeri-yatay-akordeon",
       "local": "body",
       "category": "galeri",
       "id": "g3gm02",
       "desing": {
         "max": "1280px",
         "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "textcolor": "var(--mx-site-text, #1b1b1b)",
         "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
         "surface": "var(--mx-site-surface, #ffffff)",
         "surface2": "var(--mx-site-surface-2, #ececea)",
-        "accent": "var(--mx-site-primary, #2563eb)",
-        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "gap": "0px",
         "radius": "8px",
@@ -794,10 +1011,25 @@
               "ar": "العمارة والأشياء"
             }
           }
-        ]
+        ],
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "tumu": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "version": "1.0.0",
-      "icon": "photo_library",
+      "icon": "view_week",
       "data": [
         {
           "img": "portfolyo-galeri-2.webp",
@@ -1008,7 +1240,24 @@
           }
         }
       ],
-      "index": 9
+      "index": 9,
+      "description": "Görseller yan yana dar dikey şeritler, adları dikey yazılı; üzerine gelince ya da odaklanınca şerit genişler, ad + açıklama alta yatay çıkar. En çok 8 görsel; mobilde dikey akordeon. Tüm görseller aynı anda görünür ama biri öne çıkar (flex genişleme); ızgara/ray değil, etkileşimli panorama. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "img": "görsel yolu (boşsa yer tutucu)",
+          "baslik": "dil sözlüğü (resim adı)",
+          "alt": "dil sözlüğü (boşsa başlık)",
+          "metin": "dil sözlüğü (kısa açıklama)",
+          "kat": "kategori kimliği (desing.cats id'si)",
+          "url": "iç/dış bağlantı",
+          "w": "görsel genişliği (px, oran için)",
+          "h": "görsel yüksekliği (px)",
+          "kucuk": "küçük görsel (varsa ızgarada bu)"
+        }
+      }
     },
     {
       "name": "Demo Kredi Şeridi",
@@ -1053,9 +1302,14 @@
       "index": 10
     },
     {
-      "name": "Hero 1",
+      "name": "Açılış Çağrı Kutusu — görsel üstü başlık, altta beyaz eylem kutusu",
       "desing": {
         "max": "1200px",
+        "alt": {
+          "tr": "Parlak pencere önünde profilden portre (kurgusal)",
+          "en": "Profile portrait in front of a bright window (fictional)",
+          "ar": "بورتريه جانبي أمام نافذة مضيئة (افتراضي)"
+        },
         "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
         "overlay": "linear-gradient(135deg, rgba(0,0,0,.55), rgba(0,0,0,.35))",
         "title_accent": "linear-gradient(135deg, #ffffff, #ffffff)",
@@ -1081,11 +1335,6 @@
           "ar": "مصوّر · غازي عنتاب"
         },
         "image": "/img/portfolyo-hero-portre.webp",
-        "alt": {
-          "tr": "Parlak pencere önünde profilden portre (kurgusal)",
-          "en": "Profile portrait in front of a bright window (fictional)",
-          "ar": "بورتريه جانبي أمام نافذة مضيئة (افتراضي)"
-        },
         "btn1": {
           "tr": "Projeleri gör",
           "en": "View projects",
@@ -1103,24 +1352,68 @@
           "en": "12|Years of experience|240|Shoots completed|9|Exhibitions",
           "ar": "12|سنة من الخبرة|240|جلسة منجزة|9|معارض"
         },
-        "stil": ""
+        "stil": "",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img": "",
+        "img2": "",
+        "video": "",
+        "poster": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "rozet_ikon": "",
+        "rozet_deger": "",
+        "rozet_metin": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "ortu": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 22%, #0b1220)",
+        "ortuText": "#ffffff",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "category": "hero",
       "description": "Gradient hero: istatistikler, CTA, görsel alanı. Metinler cok dilli (tr/en); renkler --gradient--, --btn_primary_bg-- ile markaya uyumlanır. Buton URL pathnext (urunler, iletisim).",
       "version": "1.1.0",
-      "icon": "hero",
+      "icon": "call_to_action",
       "id": "y7jf7f",
-      "path": "hero-1",
+      "path": "acilis-cagri-kutusu",
       "local": "body",
       "data": [],
-      "index": 11
+      "index": 11,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "deger": "sayı/değer (ör. 1.200+, dil sözlüğü olabilir)",
+          "metin": "madde metni (dil sözlüğü)",
+          "img": "madde görseli (mozaik yerleşimlerde)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
-      "name": "Kurumsal Değerler 1",
+      "name": "Değer Onay Listesi — çift sütun tik işaretli ilkeler",
       "desing": {
         "max": "1200px",
-        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
         "accent": "var(--mx-site-primary, #2563eb)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "titlecolor": "var(--mx-site-text, #1b1b1b)",
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1139,10 +1432,23 @@
           "en": "Six main areas, from portraits to architecture.",
           "ar": "ستة مجالات رئيسية من البورتريه إلى العمارة."
         },
-        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badgebg": "#2E6BFF",
-        "badgecolor": "#ffffff"
+        "badgecolor": "#ffffff",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "data": [
         {
@@ -1225,20 +1531,35 @@
         }
       ],
       "category": "values",
-      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "description": "Başlık yanda yapışkan; sağda iki sütunlu onay listesi: dolu tik dairesi, başlık ve açıklama, liste kenarında vurgu çizgisi. Değerleri bir taahhüt listesi (checklist) olarak sunar; ikon setine bağlı değil, tek tip onay işareti kullanır. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
       "version": "1.0.0",
-      "icon": "diamond",
+      "icon": "checklist",
       "id": "9lge9j",
-      "path": "values-1",
+      "path": "deger-onay-liste",
       "local": "body",
-      "index": 12
+      "index": 12,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "ikon": "Material Symbols adı",
+          "baslik": "dil sözlüğü (zorunlu)",
+          "metin": "dil sözlüğü",
+          "etiket": "dil sözlüğü (küçük üst etiket)",
+          "img": "görsel yolu (destekleyen yerleşimde)",
+          "url": "iç/dış bağlantı (kartın tamamı tıklanır)"
+        }
+      }
     },
     {
-      "name": "Kurumsal Değerler 1",
+      "name": "Değer Onay Listesi — çift sütun tik işaretli ilkeler",
       "desing": {
         "max": "1200px",
         "bgcolor": "var(--mx-site-bg, #ffffff)",
         "accent": "var(--mx-site-primary, #2563eb)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "titlecolor": "var(--mx-site-text, #1b1b1b)",
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1257,10 +1578,23 @@
           "en": "Six types of shoot planned around your needs; each starts with a free introductory chat.",
           "ar": "ستة أنواع من الجلسات تُخطَّط حسب احتياجك؛ وتبدأ كلٌّ منها بلقاء تمهيدي مجاني."
         },
-        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badgebg": "#2E6BFF",
-        "badgecolor": "#ffffff"
+        "badgecolor": "#ffffff",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "data": [
         {
@@ -1343,20 +1677,35 @@
         }
       ],
       "category": "values",
-      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "description": "Başlık yanda yapışkan; sağda iki sütunlu onay listesi: dolu tik dairesi, başlık ve açıklama, liste kenarında vurgu çizgisi. Değerleri bir taahhüt listesi (checklist) olarak sunar; ikon setine bağlı değil, tek tip onay işareti kullanır. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
       "version": "1.0.0",
-      "icon": "diamond",
+      "icon": "checklist",
       "id": "oj3sql",
-      "path": "values-1",
+      "path": "deger-onay-liste",
       "local": "body",
-      "index": 13
+      "index": 13,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "ikon": "Material Symbols adı",
+          "baslik": "dil sözlüğü (zorunlu)",
+          "metin": "dil sözlüğü",
+          "etiket": "dil sözlüğü (küçük üst etiket)",
+          "img": "görsel yolu (destekleyen yerleşimde)",
+          "url": "iç/dış bağlantı (kartın tamamı tıklanır)"
+        }
+      }
     },
     {
-      "name": "Kurumsal Değerler 1",
+      "name": "Değer Onay Listesi — çift sütun tik işaretli ilkeler",
       "desing": {
         "max": "1200px",
-        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
         "accent": "var(--mx-site-primary, #2563eb)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "titlecolor": "var(--mx-site-text, #1b1b1b)",
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1375,10 +1724,23 @@
           "en": "A four-step flow with no surprises.",
           "ar": "مسار من أربع خطوات دون مفاجآت."
         },
-        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badgebg": "#2E6BFF",
-        "badgecolor": "#ffffff"
+        "badgecolor": "#ffffff",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "data": [
         {
@@ -1435,24 +1797,39 @@
         }
       ],
       "category": "values",
-      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "description": "Başlık yanda yapışkan; sağda iki sütunlu onay listesi: dolu tik dairesi, başlık ve açıklama, liste kenarında vurgu çizgisi. Değerleri bir taahhüt listesi (checklist) olarak sunar; ikon setine bağlı değil, tek tip onay işareti kullanır. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
       "version": "1.0.0",
-      "icon": "diamond",
+      "icon": "checklist",
       "id": "dr9dme",
-      "path": "values-1",
+      "path": "deger-onay-liste",
       "local": "body",
-      "index": 14
+      "index": 14,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "ikon": "Material Symbols adı",
+          "baslik": "dil sözlüğü (zorunlu)",
+          "metin": "dil sözlüğü",
+          "etiket": "dil sözlüğü (küçük üst etiket)",
+          "img": "görsel yolu (destekleyen yerleşimde)",
+          "url": "iç/dış bağlantı (kartın tamamı tıklanır)"
+        }
+      }
     },
     {
-      "name": "Müşteri Yorumları 1",
+      "name": "Yorum Çevir Kart — önde kişi, arkada yorum",
       "desing": {
         "max": "1200px",
-        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "cardbg": "var(--mx-site-surface, #ffffff)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "titlecolor": "var(--mx-site-text, #1b1b1b)",
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
-        "accent": "var(--mx-site-primary, #2563eb)",
         "starcolor": "var(--mx-site-primary, #2563eb)",
         "badge": {
           "tr": "Referanslar",
@@ -1469,8 +1846,21 @@
           "en": "Fictional demo reviews.",
           "ar": "تقييمات تجريبية افتراضية."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "accentText": "#ffffff"
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "yildiz": "color-mix(in srgb, var(--mx-color-warning, #d97706) 78%, var(--mx-site-text, #111318))",
+        "color": "var(--mx-site-text, #111318)"
       },
       "data": [
         {
@@ -1520,24 +1910,43 @@
         }
       ],
       "category": "testimonial",
-      "description": "Manuel müşteri yorumu kartları modülü. İsim, unvan, yıldız puanı ve yorum metnini responsive grid'de gösterir; fotoğraf yoksa baş harf avatarı kullanılır. Google'a bağımlı olmayan referans/yorum vitrini için kullanılır (otomatik çekim için google-yorumlar modülü).",
+      "description": "Kartın ön yüzü avatar, ad, unvan ve puan; dokununca / Enter ile (farede üzerine gelince) dönüp arka yüzde vurgu zeminde yorumu gösterir. Merak etkileşimi: kimlik ızgarası gibi başlar, yorum keşfedilerek okunur (3B çevirme) — sabit alıntı kartı değil. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
       "version": "1.0.0",
-      "icon": "format_quote",
+      "icon": "flip",
       "id": "47e2pm",
-      "path": "testimonial-1",
+      "path": "yorum-cevir-kart",
       "local": "body",
-      "index": 15
+      "index": 15,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "metin": "yorum metni — dil sözlüğü (zorunlu)",
+          "ad": "yorumu yapanın adı",
+          "unvan": "görev / unvan (dil sözlüğü)",
+          "firma": "firma adı",
+          "puan": "1–5 yıldız (0/boş → yıldız yok)",
+          "img": "avatar / portre görseli",
+          "logo": "firma logosu (destekleyen yerleşimde)",
+          "baslik": "yorum başlığı (destekleyen yerleşimde)",
+          "tarih": "tarih metni",
+          "kaynak": "kaynak (Google, Instagram …)"
+        }
+      }
     },
     {
-      "name": "SSS Akordeon 1",
+      "name": "SSS Kategori Blokları — grup başlığı yanda, sorular karşısında",
       "desing": {
         "max": "900px",
         "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "cardbg": "var(--mx-site-surface, #ffffff)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "titlecolor": "var(--mx-site-text, #1b1b1b)",
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
-        "accent": "var(--mx-site-primary, #2563eb)",
         "badge": {
           "tr": "SSS",
           "en": "FAQ",
@@ -1553,8 +1962,24 @@
           "en": "The most common questions before a session.",
           "ar": "أكثر الأسئلة تكرارًا قبل الجلسة."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "accentText": "var(--mx-site-primary-contrast, #ffffff)"
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "tekAcik": "",
+        "ilkAcik": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "data": [
         {
@@ -1607,19 +2032,35 @@
         }
       ],
       "category": "faq",
-      "description": "SSS akordeon modülü. Soru-cevap listesini tek seferde bir açık olacak şekilde akordeon düzende gösterir. Çok dilli veri, animasyonlu açılış, mobil uyum ve erişilebilirlik (aria-expanded) desteği içerir.",
+      "description": "Sorular kategoriye göre bloklara ayrılır: her blokta solda yapışkan grup adı ve soru sayısı, sağda o grubun açılır soruları. Kategori yoksa tek blok. Sekme/filtre yok — tüm gruplar alt alta, grup adı kaydırırken sabit kalır (çok konulu uzun SSS). Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Açılırlar yerel <details> (JS'siz). Veri yoksa blok basılmaz.",
       "version": "1.0.0",
-      "icon": "quiz",
+      "icon": "category",
       "id": "icr5hd",
-      "path": "faq-1",
+      "path": "sss-kategori-blok",
       "local": "body",
-      "index": 16
+      "index": 16,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "soru": "dil sözlüğü (zorunlu; eski `question`)",
+          "cevap": "dil sözlüğü (eski `answer`)",
+          "kategori": "grup adı, dil sözlüğü (gruplayan yerleşimde)",
+          "ikon": "Material Symbols adı (destekleyen yerleşimde)",
+          "url": "«Devamı» bağlantısı (iç slug ya da tam URL)"
+        }
+      }
     },
     {
-      "name": "Randevu / Rezervasyon Formu",
-      "description": "Statik randevu ve rezervasyon sihirbazı (30 Eki 2026): hizmet → uzman → tarih → saat → bilgi → onay; masa kipi (kişi sayısı + bölüm) ve gösterim kipi. Sunucusuz: gönderim WhatsApp hazır mesaj, mailto veya .ics dosyası. Kendi takvimi (Pazartesi/Cumartesi hafta başı, kapalı günler, mola, bekleme günü), üç dil (tr/en/ar, RTL), KVKK onayı, demo kipinde tarayıcıda 'randevularım' listesi.",
+      "name": {
+        "tr": "Bilgi Panelli Randevu Talebi",
+        "en": "Booking Request with Info Panel",
+        "ar": "طلب حجز مع لوحة معلومات"
+      },
+      "description": "Bölünmüş düzen: vurgu zeminli bilgi paneli (başlık, açıklama, çalışma günleri/saatleri tablosu — hours'tan otomatik, gün adları dilde) + yanda form: tarih, gün dilimi kartları (sabah / öğle / akşam, kesin saat yerine tercih), ad, telefon, e-posta (isteğe bağlı), not, KVKK. Gönderim randevu-formu ile aynı: submit = whatsapp | mailto (sunucusuz).",
       "version": "1.0.0",
-      "icon": "event_available",
+      "icon": "calendar_month",
       "category": "randevu",
       "tags": [
         "randevu",
@@ -1638,29 +2079,12 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "muted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
         "errcolor": "color-mix(in srgb, #c81e1e 72%, var(--mx-site-text, #1b1b1b))",
-        "mode": "randevu",
         "submit": "whatsapp",
-        "demo": true,
-        "weekStart": "auto",
         "leadDays": 2,
         "maxDays": 60,
-        "maxPartySize": 8,
-        "masaDuration": 90,
-        "requireEmail": false,
         "phone": "+90 342 000 00 00",
         "email": "merhaba@denizaltan.example",
-        "location": {
-          "tr": "Atölye Sokak No: 12, Şahinbey, Gaziantep (kurgusal adres)",
-          "en": "12 Atolye Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع الأتيليه رقم 12، شاهين بي، غازي عنتاب (عنوان افتراضي)"
-        },
-        "badge": {
-          "tr": "Çekim rezervasyonu",
-          "en": "Shoot booking",
-          "ar": "حجز جلسة تصوير"
-        },
         "title": {
           "tr": "Çekim tarihinizi ayırtın",
           "en": "Reserve your shoot date",
@@ -1676,114 +2100,6 @@
           "en": "JavaScript must be enabled in your browser to use the booking form. You can call us instead.",
           "ar": "يجب تفعيل JavaScript في المتصفح لاستخدام نموذج الحجز. يمكنك الاتصال بنا بدلًا من ذلك."
         },
-        "services": [
-          {
-            "id": "portre",
-            "name": {
-              "tr": "Portre çekimi",
-              "en": "Portrait session",
-              "ar": "جلسة بورتريه"
-            },
-            "duration": 60,
-            "price": 3500
-          },
-          {
-            "id": "aile",
-            "name": {
-              "tr": "Aile ve çift çekimi",
-              "en": "Family or couple session",
-              "ar": "جلسة عائلة أو أزواج"
-            },
-            "duration": 180,
-            "price": 6900
-          },
-          {
-            "id": "urun",
-            "name": {
-              "tr": "Ürün ve katalog çekimi",
-              "en": "Product and catalogue shoot",
-              "ar": "تصوير منتجات وكتالوج"
-            },
-            "duration": 120,
-            "price": 6900
-          },
-          {
-            "id": "mimari",
-            "name": {
-              "tr": "Mimari ve iç mekân",
-              "en": "Architecture and interiors",
-              "ar": "العمارة والتصميم الداخلي"
-            },
-            "duration": 240,
-            "price": 12500
-          },
-          {
-            "id": "etkinlik",
-            "name": {
-              "tr": "Etkinlik ve davet",
-              "en": "Event or gathering",
-              "ar": "فعالية أو مناسبة"
-            },
-            "duration": 180
-          }
-        ],
-        "staff": [
-          {
-            "id": "deniz",
-            "name": {
-              "tr": "Deniz Altan",
-              "en": "Deniz Altan",
-              "ar": "دنيز ألتان"
-            },
-            "role": {
-              "tr": "Baş fotoğrafçı",
-              "en": "Lead photographer",
-              "ar": "المصوّر الرئيسي"
-            },
-            "services": [
-              "portre",
-              "aile",
-              "etkinlik",
-              "mimari"
-            ]
-          },
-          {
-            "id": "mina",
-            "name": {
-              "tr": "Mina Sezer",
-              "en": "Mina Sezer",
-              "ar": "مينا سيزر"
-            },
-            "role": {
-              "tr": "Ürün ve iç mekân fotoğrafçısı",
-              "en": "Product and interior photographer",
-              "ar": "مصوّرة المنتجات والتصميم الداخلي"
-            },
-            "services": [
-              "urun",
-              "mimari",
-              "portre"
-            ]
-          }
-        ],
-        "sections": [
-          {
-            "id": "ic",
-            "name": {
-              "tr": "İç salon",
-              "en": "Indoor",
-              "ar": "الصالة الداخلية"
-            }
-          },
-          {
-            "id": "bahce",
-            "name": {
-              "tr": "Bahçe",
-              "en": "Garden",
-              "ar": "الحديقة"
-            }
-          }
-        ],
         "hours": {
           "days": [
             1,
@@ -1803,530 +2119,143 @@
             }
           ]
         },
-        "closed": [
-          "2026-12-25",
-          "2026-12-31",
-          "2027-01-01"
-        ],
-        "kvkk": {
-          "text": {
-            "tr": "Kişisel verilerimin bu rezervasyon talebi için işlenmesine ilişkin aydınlatma metnini okudum.",
-            "en": "I have read the privacy notice on how my personal data is processed for this booking request.",
-            "ar": "لقد قرأتُ إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية لطلب الحجز هذا."
-          },
-          "href": "kisiselveriler"
-        },
         "successText": {
           "tr": "Talebiniz alındı. Çekim tarihi, fotoğrafçının onayından sonra kesinleşir. (Demo)",
           "en": "Your request has been received. The shoot date is confirmed once the photographer approves it. (Demo)",
           "ar": "تم استلام طلبك. يصبح موعد الجلسة مؤكدًا بعد موافقة المصوّر. (تجريبي)"
         },
-        "ui": {
-          "stepsLabel": {
-            "tr": "Adımlar",
-            "en": "Steps",
-            "ar": "الخطوات"
-          },
-          "stepOf": {
-            "tr": "Adım {n} / {m}",
-            "en": "Step {n} of {m}",
-            "ar": "الخطوة {n} من {m}"
-          },
-          "s_service": {
-            "tr": "Hizmet",
-            "en": "Service",
-            "ar": "الخدمة"
-          },
-          "s_staff": {
-            "tr": "Uzman",
-            "en": "Specialist",
-            "ar": "المختص"
-          },
-          "s_party": {
-            "tr": "Kişi",
-            "en": "Guests",
-            "ar": "الضيوف"
-          },
-          "s_date": {
-            "tr": "Tarih",
-            "en": "Date",
-            "ar": "التاريخ"
-          },
-          "s_time": {
-            "tr": "Saat",
-            "en": "Time",
-            "ar": "الوقت"
-          },
-          "s_info": {
-            "tr": "Bilgiler",
-            "en": "Details",
-            "ar": "البيانات"
-          },
-          "s_confirm": {
-            "tr": "Onay",
-            "en": "Confirm",
-            "ar": "التأكيد"
-          },
-          "back": {
-            "tr": "Geri",
-            "en": "Back",
-            "ar": "رجوع"
-          },
-          "next": {
-            "tr": "Devam",
-            "en": "Continue",
-            "ar": "متابعة"
-          },
-          "reqNote": {
-            "tr": "* ile işaretli alanlar zorunludur.",
-            "en": "Fields marked * are required.",
-            "ar": "الحقول المميزة بعلامة * إلزامية."
-          },
-          "t_service": {
-            "tr": "Hizmet seçin",
-            "en": "Choose a service",
-            "ar": "اختر الخدمة"
-          },
-          "minUnit": {
-            "tr": "{n} dk",
-            "en": "{n} min",
-            "ar": "{n} دقيقة"
-          },
-          "t_staff": {
-            "tr": "Uzman seçin",
-            "en": "Choose a specialist",
-            "ar": "اختر المختص"
-          },
-          "anyStaff": {
-            "tr": "Fark etmez",
-            "en": "No preference",
-            "ar": "لا تفضيل"
-          },
-          "anyStaffHint": {
-            "tr": "Uygun olan uzman atanır.",
-            "en": "The first available specialist is assigned.",
-            "ar": "يُسنَد الموعد إلى أول مختص متاح."
-          },
-          "t_party": {
-            "tr": "Kaç kişisiniz?",
-            "en": "How many guests?",
-            "ar": "كم عدد الضيوف؟"
-          },
-          "partyMinus": {
-            "tr": "Kişi sayısını azalt",
-            "en": "Decrease guests",
-            "ar": "تقليل عدد الضيوف"
-          },
-          "partyPlus": {
-            "tr": "Kişi sayısını artır",
-            "en": "Increase guests",
-            "ar": "زيادة عدد الضيوف"
-          },
-          "partyCount": {
-            "tr": {
-              "one": "{n} kişi",
-              "other": "{n} kişi"
-            },
-            "en": {
-              "one": "{n} guest",
-              "other": "{n} guests"
-            },
-            "ar": {
-              "zero": "{n} ضيف",
-              "one": "ضيف واحد",
-              "two": "ضيفان",
-              "few": "{n} ضيوف",
-              "many": "{n} ضيفًا",
-              "other": "{n} ضيف"
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "radius": "16px",
+        "panelbg": "var(--mx-site-primary, #2563eb)",
+        "paneltext": "var(--mx-site-primary-contrast, #ffffff)",
+        "dayparts": [
+          {
+            "id": "sabah",
+            "name": {
+              "tr": "Sabah",
+              "en": "Morning",
+              "ar": "الصباح"
             }
           },
-          "groupHint": {
-            "tr": "{n} kişiden büyük gruplar için lütfen bizi arayın.",
-            "en": "For groups larger than {n}, please call us.",
-            "ar": "للمجموعات التي يزيد عددها عن {n}، يُرجى الاتصال بنا."
-          },
-          "t_section": {
-            "tr": "Bölüm tercihi",
-            "en": "Seating preference",
-            "ar": "تفضيل الجلسة"
-          },
-          "anySection": {
-            "tr": "Fark etmez",
-            "en": "No preference",
-            "ar": "لا تفضيل"
-          },
-          "t_date": {
-            "tr": "Tarih seçin",
-            "en": "Choose a date",
-            "ar": "اختر التاريخ"
-          },
-          "prevMonth": {
-            "tr": "Önceki ay",
-            "en": "Previous month",
-            "ar": "الشهر السابق"
-          },
-          "nextMonth": {
-            "tr": "Sonraki ay",
-            "en": "Next month",
-            "ar": "الشهر التالي"
-          },
-          "calHint": {
-            "tr": "Gezinmek için ok tuşlarını, seçmek için Enter tuşunu kullanın. Kapalı günler seçilemez.",
-            "en": "Use the arrow keys to move and Enter to select. Unavailable days cannot be chosen.",
-            "ar": "استخدم مفاتيح الأسهم للتنقل ومفتاح Enter للاختيار. لا يمكن اختيار الأيام غير المتاحة."
-          },
-          "dayUnavailable": {
-            "tr": "uygun değil",
-            "en": "unavailable",
-            "ar": "غير متاح"
-          },
-          "selectedDate": {
-            "tr": "Seçilen tarih: {d}",
-            "en": "Selected date: {d}",
-            "ar": "التاريخ المختار: {d}"
-          },
-          "t_time": {
-            "tr": "Saat seçin",
-            "en": "Choose a time",
-            "ar": "اختر الوقت"
-          },
-          "timesFor": {
-            "tr": "{d} için uygun saatler",
-            "en": "Available times for {d}",
-            "ar": "الأوقات المتاحة ليوم {d}"
-          },
-          "p_morning": {
-            "tr": "Sabah",
-            "en": "Morning",
-            "ar": "الصباح"
-          },
-          "p_afternoon": {
-            "tr": "Öğleden sonra",
-            "en": "Afternoon",
-            "ar": "بعد الظهر"
-          },
-          "p_evening": {
-            "tr": "Akşam",
-            "en": "Evening",
-            "ar": "المساء"
-          },
-          "slotTaken": {
-            "tr": "dolu",
-            "en": "booked",
-            "ar": "محجوز"
-          },
-          "noSlots": {
-            "tr": "Bu tarihte uygun saat kalmadı. Lütfen başka bir gün seçin.",
-            "en": "No times are left on this date. Please choose another day.",
-            "ar": "لا توجد أوقات متاحة في هذا اليوم. يُرجى اختيار يوم آخر."
-          },
-          "t_info": {
-            "tr": "İletişim bilgileriniz",
-            "en": "Your contact details",
-            "ar": "بيانات التواصل"
-          },
-          "fName": {
-            "tr": "Ad soyad",
-            "en": "Full name",
-            "ar": "الاسم الكامل"
-          },
-          "fPhone": {
-            "tr": "Telefon",
-            "en": "Phone",
-            "ar": "رقم الهاتف"
-          },
-          "fEmail": {
-            "tr": "E-posta",
-            "en": "E-mail",
-            "ar": "البريد الإلكتروني"
-          },
-          "fEmailOpt": {
-            "tr": "E-posta (isteğe bağlı)",
-            "en": "E-mail (optional)",
-            "ar": "البريد الإلكتروني (اختياري)"
-          },
-          "fNote": {
-            "tr": "Not (isteğe bağlı)",
-            "en": "Note (optional)",
-            "ar": "ملاحظة (اختياري)"
-          },
-          "eService": {
-            "tr": "Lütfen bir hizmet seçin.",
-            "en": "Please choose a service.",
-            "ar": "يُرجى اختيار خدمة."
-          },
-          "eDate": {
-            "tr": "Lütfen uygun bir tarih seçin.",
-            "en": "Please choose an available date.",
-            "ar": "يُرجى اختيار تاريخ متاح."
-          },
-          "eTime": {
-            "tr": "Lütfen bir saat seçin.",
-            "en": "Please choose a time.",
-            "ar": "يُرجى اختيار وقت."
-          },
-          "eName": {
-            "tr": "Lütfen adınızı ve soyadınızı yazın.",
-            "en": "Please enter your full name.",
-            "ar": "يُرجى كتابة اسمك الكامل."
-          },
-          "ePhone": {
-            "tr": "Geçerli bir telefon numarası yazın.",
-            "en": "Please enter a valid phone number.",
-            "ar": "يُرجى كتابة رقم هاتف صحيح."
-          },
-          "eEmail": {
-            "tr": "Geçerli bir e-posta adresi yazın.",
-            "en": "Please enter a valid e-mail address.",
-            "ar": "يُرجى كتابة بريد إلكتروني صحيح."
-          },
-          "eKvkk": {
-            "tr": "Devam etmek için aydınlatma metnini onaylamanız gerekir.",
-            "en": "You need to accept the privacy notice to continue.",
-            "ar": "يجب الموافقة على إشعار الخصوصية للمتابعة."
-          },
-          "t_confirm": {
-            "tr": "Özet ve onay",
-            "en": "Review and confirm",
-            "ar": "المراجعة والتأكيد"
-          },
-          "sum_service": {
-            "tr": "Hizmet",
-            "en": "Service",
-            "ar": "الخدمة"
-          },
-          "sum_staff": {
-            "tr": "Uzman",
-            "en": "Specialist",
-            "ar": "المختص"
-          },
-          "sum_party": {
-            "tr": "Kişi sayısı",
-            "en": "Guests",
-            "ar": "عدد الضيوف"
-          },
-          "sum_section": {
-            "tr": "Bölüm",
-            "en": "Seating",
-            "ar": "الجلسة"
-          },
-          "sum_date": {
-            "tr": "Tarih",
-            "en": "Date",
-            "ar": "التاريخ"
-          },
-          "sum_time": {
-            "tr": "Saat",
-            "en": "Time",
-            "ar": "الوقت"
-          },
-          "sum_name": {
-            "tr": "Ad soyad",
-            "en": "Name",
-            "ar": "الاسم"
-          },
-          "sum_phone": {
-            "tr": "Telefon",
-            "en": "Phone",
-            "ar": "الهاتف"
-          },
-          "sum_email": {
-            "tr": "E-posta",
-            "en": "E-mail",
-            "ar": "البريد الإلكتروني"
-          },
-          "sum_note": {
-            "tr": "Not",
-            "en": "Note",
-            "ar": "ملاحظة"
-          },
-          "kvkkLink": {
-            "tr": "Aydınlatma metni",
-            "en": "Privacy notice",
-            "ar": "إشعار الخصوصية"
-          },
-          "submit_whatsapp": {
-            "tr": "WhatsApp ile gönder",
-            "en": "Send via WhatsApp",
-            "ar": "إرسال عبر واتساب"
-          },
-          "submit_mailto": {
-            "tr": "E-posta ile gönder",
-            "en": "Send by e-mail",
-            "ar": "إرسال بالبريد الإلكتروني"
-          },
-          "submit_ics": {
-            "tr": "Takvim dosyasını indir",
-            "en": "Download calendar file",
-            "ar": "تنزيل ملف التقويم"
-          },
-          "showcaseNote": {
-            "tr": "Bu bölüm bir gösterimdir: girdiğiniz bilgiler hiçbir yere gönderilmez. Gerçek talep için bizi arayabilirsiniz.",
-            "en": "This is a showcase: nothing you enter is sent anywhere. To make a real request, please call us.",
-            "ar": "هذا القسم للعرض فقط: لا تُرسَل أي بيانات تدخلها. لتقديم طلب فعلي يُرجى الاتصال بنا."
-          },
-          "callUs": {
-            "tr": "Bizi arayın",
-            "en": "Call us",
-            "ar": "اتصل بنا"
-          },
-          "restart": {
-            "tr": "Başa dön",
-            "en": "Start over",
-            "ar": "العودة إلى البداية"
-          },
-          "doneTitle_randevu": {
-            "tr": "Rezervasyon talebiniz hazır",
-            "en": "Your booking request is ready",
-            "ar": "طلب حجزك جاهز"
-          },
-          "doneTitle_masa": {
-            "tr": "Rezervasyon talebiniz hazır",
-            "en": "Your reservation request is ready",
-            "ar": "طلب حجزك جاهز"
-          },
-          "doneHint_whatsapp": {
-            "tr": "Mesaj WhatsApp'ta hazır olarak açıldı. Talebin bize ulaşması için mesajı göndermeyi unutmayın.",
-            "en": "The message opened in WhatsApp, ready to send. Remember to send it so your request reaches us.",
-            "ar": "فُتحت الرسالة جاهزة في واتساب. لا تنسَ إرسالها كي يصلنا طلبك."
-          },
-          "doneHint_mailto": {
-            "tr": "E-posta uygulamanızda hazır bir taslak açıldı. Göndermeyi unutmayın.",
-            "en": "A draft e-mail opened in your mail app. Remember to send it.",
-            "ar": "فُتحت مسودة رسالة في تطبيق البريد. لا تنسَ إرسالها."
-          },
-          "doneHint_ics": {
-            "tr": "Takvim dosyası indirildi. Kaydı takvim uygulamanıza ekleyebilirsiniz.",
-            "en": "The calendar file was downloaded. You can add the booking to your calendar app.",
-            "ar": "تم تنزيل ملف التقويم. يمكنك إضافة الحجز إلى تطبيق التقويم."
-          },
-          "reopen": {
-            "tr": "Mesajı yeniden aç",
-            "en": "Open the message again",
-            "ar": "فتح الرسالة مرة أخرى"
-          },
-          "reopen_ics": {
-            "tr": "Dosyayı yeniden indir",
-            "en": "Download again",
-            "ar": "إعادة التنزيل"
-          },
-          "addCal": {
-            "tr": "Takvime ekle",
-            "en": "Add to calendar",
-            "ar": "إضافة إلى التقويم"
-          },
-          "newBooking_randevu": {
-            "tr": "Yeni rezervasyon",
-            "en": "New booking",
-            "ar": "حجز جديد"
-          },
-          "newBooking_masa": {
-            "tr": "Yeni rezervasyon",
-            "en": "New reservation",
-            "ar": "حجز جديد"
-          },
-          "demoNote": {
-            "tr": "Demo: bilgileriniz yalnızca bu tarayıcıda saklanır, hiçbir sunucuya gönderilmez.",
-            "en": "Demo: your details stay in this browser only and are never sent to a server.",
-            "ar": "عرض تجريبي: تبقى بياناتك في هذا المتصفح فقط ولا تُرسَل إلى أي خادم."
-          },
-          "myTitle_randevu": {
-            "tr": "Rezervasyonlarım",
-            "en": "My bookings",
-            "ar": "حجوزاتي"
-          },
-          "myTitle_masa": {
-            "tr": "Rezervasyonlarım",
-            "en": "My reservations",
-            "ar": "حجوزاتي"
-          },
-          "cancel": {
-            "tr": "İptal et",
-            "en": "Cancel",
-            "ar": "إلغاء"
-          },
-          "cancelAria": {
-            "tr": "{d} saat {t} kaydını iptal et",
-            "en": "Cancel the booking on {d} at {t}",
-            "ar": "إلغاء الحجز بتاريخ {d} الساعة {t}"
-          },
-          "cancelled": {
-            "tr": "Kayıt iptal edildi.",
-            "en": "Booking cancelled.",
-            "ar": "تم إلغاء الحجز."
-          },
-          "svcFallback_randevu": {
-            "tr": "Çekim",
-            "en": "Shoot",
-            "ar": "جلسة تصوير"
-          },
-          "msg_randevu_head": {
-            "tr": "Merhaba, {name} adına {date} saat {time} için {service} çekimi ayırtmak istiyorum.",
-            "en": "Hello, I would like to book a {service} shoot on {date} at {time} under the name {name}.",
-            "ar": "مرحبًا، أودّ حجز جلسة {service} يوم {date} الساعة {time} باسم {name}."
-          },
-          "msg_randevu_head_nosvc": {
-            "tr": "Merhaba, {name} adına {date} saat {time} için randevu almak istiyorum.",
-            "en": "Hello, I would like to book an appointment on {date} at {time} under the name {name}.",
-            "ar": "مرحبًا، أود حجز موعد بتاريخ {date} الساعة {time} باسم {name}."
-          },
-          "msg_masa_head": {
-            "tr": "Merhaba, {name} adına {date} saat {time} için {party} masa rezervasyonu yapmak istiyorum.",
-            "en": "Hello, I would like to reserve a table for {party} on {date} at {time} under the name {name}.",
-            "ar": "مرحبًا، أود حجز طاولة لـ {party} بتاريخ {date} الساعة {time} باسم {name}."
-          },
-          "msg_staff": {
-            "tr": "Tercih edilen uzman: {staff}",
-            "en": "Preferred specialist: {staff}",
-            "ar": "المختص المفضل: {staff}"
-          },
-          "msg_section": {
-            "tr": "Bölüm: {section}",
-            "en": "Seating: {section}",
-            "ar": "الجلسة: {section}"
-          },
-          "msg_phone": {
-            "tr": "Telefon: {phone}",
-            "en": "Phone: {phone}",
-            "ar": "الهاتف: {phone}"
-          },
-          "msg_email": {
-            "tr": "E-posta: {email}",
-            "en": "E-mail: {email}",
-            "ar": "البريد الإلكتروني: {email}"
-          },
-          "msg_note": {
-            "tr": "Not: {note}",
-            "en": "Note: {note}",
-            "ar": "ملاحظة: {note}"
-          },
-          "mailSubject_randevu": {
-            "tr": "Çekim rezervasyon talebi – {name}",
-            "en": "Shoot booking request – {name}",
-            "ar": "طلب حجز جلسة تصوير – {name}"
-          },
-          "mailSubject_masa": {
-            "tr": "Rezervasyon talebi – {name}",
-            "en": "Reservation request – {name}",
-            "ar": "طلب حجز – {name}"
-          },
-          "icsSummary_randevu": {
-            "tr": "Çekim: {service}",
-            "en": "Shoot: {service}",
-            "ar": "جلسة تصوير: {service}"
-          },
-          "icsSummary_masa": {
-            "tr": "Masa rezervasyonu – {party}",
-            "en": "Table reservation – {party}",
-            "ar": "حجز طاولة – {party}"
+          {
+            "id": "ogle",
+            "name": {
+              "tr": "Öğle",
+              "en": "Midday",
+              "ar": "الظهيرة"
+            }
+          },
+          {
+            "id": "aksam",
+            "name": {
+              "tr": "Akşam",
+              "en": "Evening",
+              "ar": "المساء"
+            }
           }
+        ],
+        "hoursTitle": {
+          "tr": "Çalışma saatleri",
+          "en": "Opening hours",
+          "ar": "ساعات العمل"
+        },
+        "closedLabel": {
+          "tr": "Kapalı",
+          "en": "Closed",
+          "ar": "مغلق"
+        },
+        "dateLabel": {
+          "tr": "Tarih",
+          "en": "Date",
+          "ar": "التاريخ"
+        },
+        "daypartLabel": {
+          "tr": "Tercih ettiğiniz zaman",
+          "en": "Preferred time",
+          "ar": "الوقت المفضل"
+        },
+        "nameLabel": {
+          "tr": "Adınız",
+          "en": "Your name",
+          "ar": "اسمك"
+        },
+        "phoneLabel": {
+          "tr": "Telefon",
+          "en": "Phone",
+          "ar": "الهاتف"
+        },
+        "emailLabel": {
+          "tr": "E-posta (isteğe bağlı)",
+          "en": "E-mail (optional)",
+          "ar": "البريد الإلكتروني (اختياري)"
+        },
+        "noteLabel": {
+          "tr": "Not (isteğe bağlı)",
+          "en": "Note (optional)",
+          "ar": "ملاحظة (اختياري)"
+        },
+        "kvkkText": {
+          "tr": "Kişisel verilerimin bu talep için işlenmesine ilişkin aydınlatma metnini okudum.",
+          "en": "I have read the privacy notice on processing my data for this request.",
+          "ar": "قرأت إشعار الخصوصية بشأن معالجة بياناتي لهذا الطلب."
+        },
+        "kvkkLink": {
+          "tr": "Aydınlatma metni",
+          "en": "Privacy notice",
+          "ar": "إشعار الخصوصية"
+        },
+        "kvkkUrl": "",
+        "submitWhatsapp": {
+          "tr": "WhatsApp ile gönder",
+          "en": "Send via WhatsApp",
+          "ar": "إرسال عبر واتساب"
+        },
+        "submitMailto": {
+          "tr": "E-posta ile gönder",
+          "en": "Send via e-mail",
+          "ar": "إرسال عبر البريد"
+        },
+        "required": {
+          "tr": "Bu alan zorunlu.",
+          "en": "This field is required.",
+          "ar": "هذا الحقل مطلوب."
+        },
+        "phoneInvalid": {
+          "tr": "Geçerli bir telefon numarası girin.",
+          "en": "Enter a valid phone number.",
+          "ar": "أدخل رقم هاتف صالحًا."
+        },
+        "dayClosed": {
+          "tr": "Seçilen gün kapalı; başka bir gün seçin.",
+          "en": "The selected day is closed; please pick another day.",
+          "ar": "اليوم المختار مغلق؛ اختر يومًا آخر."
+        },
+        "closedText": {
+          "tr": "Çevrimiçi randevu şu an kapalı.",
+          "en": "Online booking is currently unavailable.",
+          "ar": "الحجز عبر الإنترنت غير متاح حاليًا."
+        },
+        "subject": {
+          "tr": "Randevu talebi",
+          "en": "Booking request",
+          "ar": "طلب حجز"
+        },
+        "msgTemplate": {
+          "tr": "Randevu talebi\nTarih: {date}\nZaman: {part}\nAd: {name}\nTelefon: {phone}\nE-posta: {email}\nNot: {note}",
+          "en": "Booking request\nDate: {date}\nTime: {part}\nName: {name}\nPhone: {phone}\nE-mail: {email}\nNote: {note}",
+          "ar": "طلب حجز\nالتاريخ: {date}\nالوقت: {part}\nالاسم: {name}\nالهاتف: {phone}\nالبريد: {email}\nملاحظة: {note}"
         }
       },
       "id": "rmvkxc",
-      "path": "randevu-formu",
+      "path": "randevu-formu-3",
       "local": "body",
       "data": [],
-      "index": 17
+      "index": 17,
+      "veri": {
+        "statik": true,
+        "dinamik": true,
+        "kaynak": "desing + webmakerdata.setting.phone/email; gönderim: wa.me / mailto (sunucu ucu yok)"
+      }
     }
   ]
 }
